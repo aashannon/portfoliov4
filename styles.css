@@ -63,6 +63,19 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+/*--------------------------This is for body styling-------------------------------------*/
+
+body {
+  background-color: #343740;
+}
+
+
+
+
+
+
+
+
 /*--------------------------This is for navigation styling-------------------------------------*/
 
 .topnav {
@@ -101,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .active {
     color: white;
-    background-color: #666666;
+    background-color: #343740;
 }
 
 /* Hamburger styles */
@@ -144,7 +157,7 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: 0;
   right: 0;
-  background-color: #666666;
+  background-color: #343740;
   overflow-x: hidden;
   transition: 0.1s;
   z-index: 1000;
@@ -186,8 +199,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/*--------------------------This is for Logo styling-------------------------------------*/
 
+
+
+
+
+
+/*--------------------------This is for Logo styling-------------------------------------*/
 
 .logo {
   width: 60px;
@@ -204,6 +222,11 @@ h1, h2, h3, h4, h5, h6 {
   object-fit: contain;
   display: block;
 }
+
+
+
+
+
 
 
 
@@ -247,3 +270,20 @@ h1, h2, h3, h4, h5, h6 {
   color: #bcbcbc;
 }
 
+
+
+
+
+
+
+/*--------------------------This is for Landing Page Hero styling-------------------------------------*/
+
+.main-hero h1{
+  font-size: 3rem;
+  color: white;
+}
+
+.main-hero h2{
+  font-size: 1.5rem;
+  color: #bf7973;
+}
