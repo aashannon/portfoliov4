@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aaron Shannon | UX Interaction Developer</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+        <header class="topnav">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Logo" /></a>
+            </div>
+
+            <!-- Hamburger Icon -->
+            <div class="hamburger" onclick="toggleNav(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+
+            <!-- Slide-out nav menu -->
+            <div id="myNav" class="overlay-nav">
+                <div class="overlay-content">
+                    <a href="index.html">Home</a>
+                    <a href="inTents.html">inTents Case Study</a>
+                    <a href="CertsandSkills.html">Certs & Skills</a>
+                    <a href="OtherProjects.html">Other Projects</a>
+                    <a href="AboutMe.html">About Me</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="main-hero">
+                <h1>Aaron Shannon</h1>
+                <h2>UX Interaction Specialist & Engineer</h2>
+                <p>Insert short description about self and goals.</p>
+            </section>
+
+            <section class="projects">
+                <h2>Case Studies</h2>
+                <div class="section-card">
+                    <img src="images/project1.jpg" alt="inTents case study image of phones with app displayed" />
+                    <h3>inTents</h3>
+                    <p>Short description of the project and link to appropriate page.</p>
+                </div>
+                <div class="section-card">
+                    <img src="images/project2.jpg" alt="Project 2" />
+                    <h3>Coming Soon</h3>
+                    <p>Short description of the project and link to appropriate page.</p>
+                </div>
+            </section>
+
+            <section class="section-card">
+                <h2>Certifications & Skills</h2>
+                <div class="certification-card">
+                    <img src="images/cert1.jpg" alt="collage of different certifications and word cloud of skills" />
+                    <p>Short description of the certifications and skills with link to appropriate page.</p>
+                </div>
+            </section>
+
+            <section class="section-card">
+                <h2>Other Projects</h2>
+                <div class="project-card">
+                    <img src="images/project3.jpg" alt="collage or other projects concerning media, video, and programs" />
+                    <p>Short description of the projects and link to appropriate page.</p>
+                </div>
+            </section>
+
+            <section class="about-me">
+                <h2>About Me</h2>
+                <img src="images/profile.jpg" alt="Profile picture of Aaron Shannon" />
+                <p>Short description about personal goals, past, and more with link to appropriate page.</p>
+            </section>
+
+            <section class="contact">
+                <h2>Contact Me</h2>
+                <p>If you would like to get in touch, please reach out via email or connect with me on LinkedIn.</p>
+                <form action="mailto:ayren.shannon@me.com" method="POST" enctype="text/plain">
+                    <label for="name">Name:</label><br />
+                    <input type="text" name="name" placeholder="Person Personson" required><br />
+
+                    <label for="email">Email:</label><br />
+                    <input type="email" name="email" placeholder="email@example.com" required><br />
+
+                    <label for="message">Message:</label><br />
+                    <textarea name="message" id="message" rows="5" placeholder="Enter your text here" required></textarea><br />
+
+                    <input type="submit" value="Send">
+                </form>
+            </section>
+
+            <footer>
+                <p>&copy; 2025 Aaron Shannon. All rights reserved.</p>
+            </footer>
+        </main>
+
+        <script src="scripts.js"></script>
+    </body>
+
+
+</html>

@@ -1,0 +1,227 @@
+/*
+This is for clearing up the default styles of the browser
+and setting up a base for the rest of the styles.
+*/
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+
+
+
+
+
+
+/*--------------------------This is for navigation styling-------------------------------------*/
+
+.topnav {
+    overflow: hidden;
+    background-color: #666666;
+    position: relative;
+    height: 96px;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.topnav a.icon {
+    background: black;
+    display: block;
+    position:absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.active {
+    color: white;
+    background-color: #666666;
+}
+
+/* Hamburger styles */
+.hamburger {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  cursor: pointer;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.hamburger div {
+  background-color: white;
+  height: 3px;
+  width: 100%;
+  transition: 0.2s;
+}
+
+.hamburger.active .bar1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active .bar2 {
+  opacity: 0;
+}
+
+.hamburger.active .bar3 {
+  transform: rotate(45deg) translate(-7px, -7px);
+}
+
+/* Overlay full-screen nav */
+.overlay-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #666666;
+  overflow-x: hidden;
+  transition: 0.1s;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: width 0.2s ease;
+}
+
+.overlay-nav.open {
+  width: 100%;
+}
+
+/* Nav content */
+.overlay-content a {
+  padding: 20px;
+  text-decoration: none;
+  font-size: 36px;
+  color: white;
+  display: block;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.overlay-content a:hover {
+  color: black;
+  background-color: white;
+}
+
+/* Close button */
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  font-size: 40px;
+  text-decoration: none;
+  color: white;
+}
+
+
+/*--------------------------This is for Logo styling-------------------------------------*/
+
+
+.logo {
+    display: inline-flex;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    aspect-ratio: 1/1;
+
+}
+
+
+
+
+/*--------------------------This is for Landing Page styling-------------------------------------*/
+
+.main-hero{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: center;
+  padding-top: 30vh;
+  padding-left: 8px
+}
+.main-hero h1{
+  font-size: 3rem;
+}
+
+.main-hero h2{
+  font-size: 1.5rem;
+}
+
+.main-hero p{
+  align-items: flex-start;
+}
+
