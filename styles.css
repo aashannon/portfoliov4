@@ -66,10 +66,13 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------This is for navigation styling-------------------------------------*/
 
 .topnav {
-    overflow: hidden;
-    background-color: #666666;
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* optional: push logo left, hamburger right */
+    background-color: #343740;
     height: 96px;
+    padding: 0 1rem;
+    z-index: 2;
 }
 
 .topnav #myLinks {
@@ -78,7 +81,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .topnav a {
     color: white;
-    padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
     display: block;
@@ -188,14 +190,19 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .logo {
-    display: inline-flex;
-    width: 60px;
-    height: 60px;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    aspect-ratio: 1/1;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
 
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 
@@ -204,15 +211,16 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------This is for Landing Page styling-------------------------------------*/
 
 .main-hero{
-  height: 100vh;
+  height: calc(100vh - 96px);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
   text-align: center;
-  padding-top: 30vh;
-  padding-left: 8px
+  padding: 1rem;
+  position: relative;
 }
+
 .main-hero h1{
   font-size: 3rem;
 }
@@ -221,7 +229,21 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.5rem;
 }
 
-.main-hero p{
-  align-items: flex-start;
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+.social-links a{
+  color: #666;
+  font-size: 2rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover{
+  color: #bcbcbc;
 }
 
