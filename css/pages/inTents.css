@@ -1,0 +1,22 @@
+/*--------------------------This is for inTents Hero styling-------------------------------------*/
+.intents-hero {
+  position: relative;
+  width: 100%;
+}
+
+.intents-hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 10%;     /* Move up from the bottom of the image */
+  right: auto;       /* Space from right edge */
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: left;
+  max-width: 60%;
+}

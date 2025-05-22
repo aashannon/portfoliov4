@@ -1,83 +1,4 @@
-/*
-This is for clearing up the default styles of the browser
-and setting up a base for the rest of the styles.
-*/
-/* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-/* 2. Remove default margin */
-* {
-  margin: 0;
-}
-
-/* 3. Enable keyword animations */
-@media (prefers-reduced-motion: no-preference) {
-  html {
-    interpolate-size: allow-keywords;
-  }
-}
-
-body {
-  /* 4. Add accessible line-height */
-  line-height: 1.5;
-  /* 5. Improve text rendering */
-  -webkit-font-smoothing: antialiased;
-}
-
-/* 6. Improve media defaults */
-img, picture, video, canvas, svg {
-  display: block;
-  max-width: 100%;
-}
-
-/* 7. Inherit fonts for form controls */
-input, button, textarea, select {
-  font: inherit;
-}
-
-/* 8. Avoid text overflows */
-p, h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word;
-}
-
-/* 9. Improve line wrapping */
-p {
-  text-wrap: pretty;
-}
-h1, h2, h3, h4, h5, h6 {
-  text-wrap: balance;
-}
-
-/*
-  10. Create a root stacking context
-*/
-#root, #__next {
-  isolation: isolate;
-}
-
-
-
-
-
-
-
-/*--------------------------This is for body styling-------------------------------------*/
-
-body {
-  background-color: #343740;
-}
-
-
-
-
-
-
-
-
 /*--------------------------This is for navigation styling-------------------------------------*/
-
 .topnav {
     display: flex;
     align-items: center;
@@ -132,7 +53,7 @@ body {
 }
 
 .hamburger div {
-  background-color: white;
+  background-color: #66d9c4;
   height: 3px;
   width: 100%;
   transition: 0.2s;
@@ -177,7 +98,7 @@ body {
   padding: 20px;
   text-decoration: none;
   font-size: 36px;
-  color: white;
+  color: #66d9c4;
   display: block;
   text-align: center;
   transition: 0.2s;
@@ -225,65 +146,3 @@ body {
 
 
 
-
-
-
-
-
-
-/*--------------------------This is for Landing Page styling-------------------------------------*/
-
-.main-hero{
-  height: calc(100vh - 96px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  text-align: center;
-  padding: 1rem;
-  position: relative;
-}
-
-.main-hero h1{
-  font-size: 3rem;
-}
-
-.main-hero h2{
-  font-size: 1.5rem;
-}
-
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 1.5rem;
-  width: 100%;
-}
-
-.social-links a{
-  color: #666;
-  font-size: 2rem;
-  transition: color 0.3s ease;
-}
-
-.social-links a:hover{
-  color: #bcbcbc;
-}
-
-
-
-
-
-
-
-/*--------------------------This is for Landing Page Hero styling-------------------------------------*/
-
-.main-hero h1{
-  font-size: 3rem;
-  color: white;
-}
-
-.main-hero h2{
-  font-size: 1.5rem;
-  color: #bf7973;
-}
