@@ -104,6 +104,11 @@
     padding-bottom: 6rem;
 }
 
+.projects-card img {
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 .certification-card {
     border-top: 2px solid #d1d5db05;
     padding-left: 1rem;
@@ -111,11 +116,20 @@
     padding-bottom: 6rem;
 }
 
+.certification-card img {
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 .otherprojects-card {
     border-top: 2px solid #d1d5db05;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 6rem;
+}
+
+.otherprojects-card img {
+    border-radius: 0.5rem;
 }
 
 .aboutme-card {
