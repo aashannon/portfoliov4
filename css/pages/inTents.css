@@ -20,3 +20,186 @@
   text-align: left;
   max-width: 60%;
 }
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------This is for inTents section styling----------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/*-----------------------------------This is for Case Study section styling-------------------------------------*/
+
+.casestudy-card {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 6rem;
+}
+
+.casestudy-card p {
+  padding-bottom: 0.5rem;
+}
+
+
+
+
+
+
+/*-----------------------------------This is for Understanding User section styling-------------------------------------*/
+
+.understanding-card {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 6rem;
+  border-top: 2px solid #d1d5db05;
+}
+
+.understanding-header {
+  padding-bottom: 2rem;
+}
+
+.pain-points h3 {
+  padding-bottom: 1rem;
+}
+
+.pain-points p {
+  padding-bottom: 0.5rem;
+}
+
+.pain-points span {
+  border-radius: 50%;
+  background-color: #bf7973;
+  width: 2rem;
+  height: 2rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.5rem;
+  color: #343740;
+}
+
+
+
+
+
+
+/*-----------------------------------This is for Ideation and Wireframing section styling-------------------------------------*/
+
+.ideawireframes-card {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 6rem;
+  border-top: 2px solid #d1d5db05;
+}
+
+.ideation-header {
+  padding-bottom: 2rem;
+}
+
+.wireframes {
+  padding-bottom: 2rem;
+}
+
+.wireframes img {
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.usability-testing {
+  padding-bottom: 2rem;
+}
+
+.usability-testing h3{
+  padding-bottom: 1rem;
+}
+
+.usability-testing p {
+  padding-bottom: 0.5rem;
+}
+
+.usability-testing i {
+  color: #66d9c4;
+  font-size: 2rem;
+}
+
+.testing-results h3{
+  padding-bottom: 1rem;
+}
+
+.testing-results span {
+  border-radius: 50%;
+  background-color: #bf7973;
+  width: 2rem;
+  height: 2rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.5rem;
+  color: #343740;
+}
+
+.testing-results p {
+  padding-bottom: 0.5rem;
+}
+
+
+
+/*-----------------------------------This is for Final Design section styling-------------------------------------*/
+.finaldesign-card {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 6rem;
+  border-top: 2px solid #d1d5db05;
+}
+
+.finaldesign-header {
+  padding-bottom: 2rem;
+}
+
+.finaldesigns {
+  padding-bottom: 2rem;
+}
+
+.finaldesigns img {
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+/*-----------------------------------This is for Reflection and Next Steps section styling-------------------------------------*/
+.conclusion-card {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 6rem;
+  border-top: 2px solid #d1d5db05;
+}
+
+.conclusion-header {
+  padding-bottom: 2rem;
+}
+
+
+.nextsteps span{
+  border-radius: 50%;
+  background-color: #bf7973;
+  width: 2rem;
+  height: 2rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.5rem;
+  color: #343740;
+}
+
+.nextsteps p {
+  padding-bottom: 0.5rem;
+}
