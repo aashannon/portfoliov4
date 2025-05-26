@@ -1,0 +1,60 @@
+.cert-intro {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 6rem;
+}
+
+.cert-intro h1 {
+    color: #66d9c4;
+}
+
+.display-card {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 6rem;
+}
+
+.display-card img {
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cert-thumbnails {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem; /* spacing between images */
+  justify-content: flex-start;
+}
+
+.cert-thumbnails li {
+  flex: 0 1 auto;
+}
+
+.cert-thumbnails img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+
+
+/*--------------------------This is for Skill Section styling-------------------------------------*/
+.skill-intro {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 6rem;
+    border-top: 2px solid #d1d5db05;
+}
+
+.skill-intro h1 {
+    color: #66d9c4;
+}
+
+.skill-card {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 6rem;
+}

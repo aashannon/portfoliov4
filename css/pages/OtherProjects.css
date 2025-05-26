@@ -1,0 +1,47 @@
+/*--------------------------This is for Hero styling-------------------------------------*/
+.hero {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 6rem;
+}
+
+
+
+
+
+
+/*--------------------------This is for Section layout styling-------------------------------------*/
+.project-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 6rem;
+    border-top: 2px solid #d1d5db05;
+}
+
+.project-section img {
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.project-card {
+    padding-bottom: 4rem;
+}
+
+
+
+
+
+
+
+
+

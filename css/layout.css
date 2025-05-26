@@ -1,4 +1,7 @@
 /*--------------------------This is for navigation styling-------------------------------------*/
+.nav-links {
+  display: none; /* Hide by default */
+}
 .topnav {
     display: flex;
     align-items: center;
@@ -102,11 +105,12 @@
   display: block;
   text-align: center;
   transition: 0.2s;
+  border-radius: 1rem;
 }
 
 .overlay-content a:hover {
-  color: black;
-  background-color: white;
+  color: #343740;
+  background-color: #66d9c4;
 }
 
 /* Close button */
@@ -146,3 +150,41 @@
 
 
 
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------This is for @media 768px (tablet and higher) styling-----------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (min-width: 900px) {
+  .hamburger {
+    display: none; /* Hide hamburger on larger screens */
+  }
+
+  .overlay-nav {
+    display: none; /* Hide overlay nav on larger screens */
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .nav-links a {
+    color: #66d9c4;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background 0.2s ease;
+    border-radius: 0.5rem;
+  }
+
+  .nav-links a:hover {
+    background-color: #66d9c4;
+    color: #343740;
+  }
+  
+
+}

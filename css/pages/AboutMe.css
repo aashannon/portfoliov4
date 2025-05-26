@@ -1,0 +1,29 @@
+.aboutme-hero {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 6rem;
+}
+
+.aboutme-hero h1{
+    font-size: 3rem;
+}
+
+.aboutme-hero img{
+    border-radius: 50%;
+    height: 300px;
+    width:300px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/*--------------------------This is for body styling-------------------------------------*/
+
+.info-card {
+    border-top: 2px solid #d1d5db05;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 6rem;
+}

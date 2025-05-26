@@ -7,7 +7,9 @@
   justify-content: center;
   align-items: flex-start;
   text-align: center;
-  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 6rem;
   position: relative;
 }
 
@@ -109,6 +111,10 @@
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.projects-card p {
+    padding-bottom: 1rem;
+}
+
 .certification-card {
     border-top: 2px solid #d1d5db05;
     padding-left: 1rem;
@@ -119,6 +125,10 @@
 .certification-card img {
     border-radius: 0.5rem;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.certification-card p {
+    padding-bottom: 1rem;
 }
 
 .otherprojects-card {
@@ -132,6 +142,10 @@
     border-radius: 0.5rem;
 }
 
+.otherprojects-card p {
+    padding-bottom: 1rem;
+}
+
 .aboutme-card {
     border-top: 2px solid #d1d5db05;
     padding-left: 1rem;
@@ -139,9 +153,27 @@
     padding-bottom: 6rem;
 }
 
+.aboutme-card p {
+    padding-bottom: 1rem;
+}
 
 
 
 
 
-/*--------------------------This is for main page image styling-------------------------------------*/
+
+/*--------------------------This is for About Me styling-------------------------------------*/
+.aboutme-card img {
+  border-radius: 50%;
+  height: 200px;
+  width:200px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+
+/*--------------------------This is for testing styling-------------------------------------*/

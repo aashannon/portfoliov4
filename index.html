@@ -13,19 +13,30 @@
         <link rel="icon" href="images/favicon.png" type="image/png">
         <meta name="description" content="Aaron Shannon's UX design portfolio featuring user-centered design, wireframes, user research, case studies, and high-fidelity and low-fidelity prototypes.">
     </head>
+
+    
     <body>
         <header class="topnav">
             <!-- Logo -->
             <a class="logo" href="index.html"><img src="images/logo.png" alt="Logo" /></a>
 
-            <!-- Hamburger Icon -->
+            <!-- Regular Navigation Links -->
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="inTents.html">inTents Case Study</a>
+                <a href="CertsandSkills.html">Certs & Skills</a>
+                <a href="OtherProjects.html">Other Projects</a>
+                <a href="AboutMe.html">About Me</a>
+            </nav>
+
+            <!-- Hamburger Icon (mobile only)-->
             <div class="hamburger" onclick="toggleNav(this)">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
             </div>
 
-            <!-- Slide-out nav menu -->
+            <!-- Slide-out nav menu (mobile only)-->
             <div id="myNav" class="overlay-nav">
                 <div class="overlay-content">
                     <a href="index.html">Home</a>
@@ -36,6 +47,8 @@
                 </div>
             </div>
         </header>
+
+        
         <main>
             <section class="main-hero">
                 <p><span>Hi, my name is,</span></p>
@@ -66,7 +79,7 @@
                     <h3>inTents</h3>
                     <p>Short description of the project and link to appropriate page.</p>
                     <div class="button-container">
-                        <button class="button"><a href="inTents.html">View Case Study</a></button>
+                        <a href="inTents.html" class="button">View Case Study</a>
                     </div>
                 </div>
 
@@ -81,7 +94,7 @@
                     <a href="CertsandSkills.html"><img src="images/certsandskills.png" alt="collage of different certifications and word cloud of skills" /></a>
                     <p>Short description of the certifications and skills with link to appropriate page.</p>
                     <div class="button-container">
-                        <button class="button"><a href="inTents.html">View Case Study</a></button>
+                        <a href="CertsandSkills.html" class="button">Learn More</a>
                     </div>
                 </div>
             </section>
@@ -89,38 +102,26 @@
             <section class="otherprojects-card">
                 <h2>Other Projects</h2>
                 <div class="section-card">
-                    <img src="images/project3.jpg" alt="collage or other projects concerning media, video, and programs" />
+                    <img src="images/otherProjefcts-thumbnail.png" alt="collage or other projects concerning media, video, and programs" />
                     <p>Short description of the projects and link to appropriate page.</p>
                     <div class="button-container">
-                        <button class="button"><a href="inTents.html">View Case Study</a></button>
+                        <a href="OtherProjects.html" class="button">Learn More</a>
                     </div>
                 </div>
             </section>
 
             <section class="aboutme-card">
                 <h2>About Me</h2>
-                <img src="images/profile.jpg" alt="Profile picture of Aaron Shannon" />
+                <img src="images/thumbnail_profile_photo.jpg" alt="Profile picture of Aaron Shannon" />
                 <p>Short description about personal goals, past, and more with link to appropriate page.</p>
                 <div class="button-container">
-                        <button class="button"><a href="inTents.html">View Case Study</a></button>
-                    </div>
+                    <a href="AboutMe.html" class="button">Learn More</a>
+                </div>
             </section>
 
             <section class="contact-card">
                 <h2>Contact Me</h2>
                 <p>If you would like to get in touch, please reach out via email or connect with me on LinkedIn.</p>
-                <form action="mailto:ayren.shannon@me.com" method="POST" enctype="text/plain">
-                    <label for="name">Name:</label><br />
-                    <input type="text" name="name" placeholder="Person Personson" required><br />
-
-                    <label for="email">Email:</label><br />
-                    <input type="email" name="email" placeholder="email@example.com" required><br />
-
-                    <label for="message">Message:</label><br />
-                    <textarea name="message" id="message" rows="5" placeholder="Enter your text here" required></textarea><br />
-
-                    <input type="submit" value="Send">
-                </form>
             </section>
 
             <footer>

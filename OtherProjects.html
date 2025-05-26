@@ -7,14 +7,27 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/base.css">
         <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/components.css">
+        <link rel="stylesheet" href="css/pages/OtherProjects.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <link rel="icon" href="images/favicon.png" type="image/png">
         <meta name="description" content="Aaron Shannon's UX design portfolio featuring user-centered design, wireframes, user research, case studies, and high-fidelity and low-fidelity prototypes.">
     </head>
+
+
     <body>
         <header class="topnav">
             <!-- Logo -->
             <a class="logo" href="index.html"><img src="images/logo.png" alt="Logo" /></a>
+
+            <!-- Regular Navigation Links -->
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="inTents.html">inTents Case Study</a>
+                <a href="CertsandSkills.html">Certs & Skills</a>
+                <a href="OtherProjects.html">Other Projects</a>
+                <a href="AboutMe.html">About Me</a>
+            </nav>
 
             <!-- Hamburger Icon -->
             <div class="hamburger" onclick="toggleNav(this)">
@@ -34,9 +47,11 @@
                 </div>
             </div>
         </header>
+
+
+        <!-- Main content -->
         <main>
             <section class="hero">
-                <h1>Intro</h1>
                 <p>Brief introduction of other projects.</p>
             </section>
 
@@ -45,19 +60,25 @@
                     <p>Short description of technical projects</p>
 
                     <section class="project-card">
-                        <img src="images/project1.jpg" alt="Project 1" />
+                        <img src="images/searchEngine.png" alt="Project 1" />
                         <h3>Project 1</h3>
                         <p>Short description of the project and link to appropriate page.</p>
                         <p><b>Tags:</b> tag1, tag2, etc...</p>
-                        <a href="https://www.github.com">Link</a>
+                        <div class="button-container">
+                            <a href="inTents.html" class="button">View Case Study</a>
+                        </div>
                     </section>
 
                     <section class="project-card">
-                        <img src="images/project2.jpg" alt="Project 2" />
-                        <h3>Project 2</h3>
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/f39IwbkLQEo?si=da7iHAu6Ur5jE1wy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                            <h3>Project 2</h3>
                         <p>Short description of the project and link to appropriate page.</p>
                         <p><b>Tags:</b> tag1, tag2, etc...</p>
-                        <a href="https://www.github.com">Link</a>
+                        <div class="button-container">
+                            <a href="inTents.html" class="button">View Case Study</a>
+                        </div>
                     </section>
             </section>
 
@@ -66,11 +87,13 @@
                     <p>Short description of media projects</p>
 
                     <section class="project-card">
-                        <img src="images/project1.jpg" alt="Project 1" />
+                        <img src="images/infograph.png" alt="Project 1"/>
                         <h3>Project 1</h3>
                         <p>Short description of the project and link to appropriate page.</p>
                         <p><b>Tags:</b> tag1, tag2, etc...</p>
-                        <a href="https://www.github.com">Link</a>
+                        <div class="button-container">
+                            <a href="inTents.html" class="button">View Case Study</a>
+                        </div>
                     </section>
             </section>
 
@@ -79,11 +102,15 @@
                     <p>Short description of animation project.</p>
 
                     <section class="project-card">
-                        <img src="images/project1.jpg" alt="Project 1" />
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/I2uO1ssn9v0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
                         <h3>Project 1</h3>
                         <p>Short description of the project and link to appropriate page.</p>
                         <p><b>Tags:</b> tag1, tag2, etc...</p>
-                        <a href="https://www.github.com">Link</a>
+                        <div class="button-container">
+                            <a href="inTents.html" class="button">View Case Study</a>
+                        </div>
                     </section>
             </section>
 
@@ -92,37 +119,29 @@
                     <p>Short description of older web projects</p>
 
                     <section class="project-card">
-                        <img src="images/project1.jpg" alt="Project 1" />
+                        <img src="images/recipeWebsite.png" alt="Project 1" />
                         <h3>Project 1</h3>
                         <p>Short description of the project and link to appropriate page.</p>
                         <p><b>Tags:</b> tag1, tag2, etc...</p>
-                        <a href="https://www.github.com">Link</a>
+                        <div class="button-container">
+                            <a href="inTents.html" class="button">View Case Study</a>
+                        </div>
                     </section>
 
                     <section class="project-card">
-                        <img src="images/project2.jpg" alt="Project 2" />
+                        <img src="images/oldPortfolio.png" alt="Project 2" />
                         <h3>Project 2</h3>
                         <p>Short description of the project and link to appropriate page.</p>
                         <p><b>Tags:</b> tag1, tag2, etc...</p>
-                        <a href="https://www.github.com">Link</a>
+                        <div class="button-container">
+                            <a href="inTents.html" class="button">View Case Study</a>
+                        </div>
                     </section>
             </section>
 
             <section class="contact">
                 <h2>Contact Me</h2>
                 <p>If you would like to get in touch, please reach out via email or connect with me on LinkedIn.</p>
-                <form action="mailto:ayren.shannon@me.com" method="POST" enctype="text/plain">
-                    <label for="name">Name:</label><br />
-                    <input type="text" name="name" placeholder="Person Personson" required><br />
-
-                    <label for="email">Email:</label><br />
-                    <input type="email" name="email" placeholder="email@example.com" required><br />
-
-                    <label for="message">Message:</label><br />
-                    <textarea name="message" id="message" rows="5" placeholder="Enter your text here" required></textarea><br />
-
-                    <input type="submit" value="Send">
-                </form>
             </section>
 
             <footer>
