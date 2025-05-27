@@ -1,4 +1,8 @@
 .aboutme-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 6rem;
@@ -6,6 +10,7 @@
 
 .aboutme-hero h1{
     font-size: 3rem;
+    color: white
 }
 
 .aboutme-hero img{
@@ -26,4 +31,45 @@
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 6rem;
+}
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------This is for @media 768px (tablet and higher) styling-----------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media (min-width: 768px) {
+  .aboutme-hero {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    gap: 2rem;
+  }
+
+  .aboutme-hero img {
+        width: 600px;
+        height: 600px;
+        flex-shrink: 0; /* Don't allow the image to shrink */
+        object-fit: cover;
+        object-position: center;
+        margin: 0;
+        margin-right: 2rem;
+  }
+
+  .aboutme-content {
+        max-width: 600px;
+        text-align: left;
+  }
+
+  .social-links {
+        justify-content: flex-start;
+  }
 }

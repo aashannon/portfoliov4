@@ -8,6 +8,13 @@
     color: #66d9c4;
 }
 
+.certification-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 6rem;
+}
+
 .display-card {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -57,4 +64,68 @@
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 6rem;
+}
+
+.skill-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.5rem 1rem;
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------This is for @media 768px (tablet and higher) styling-----------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media (min-width: 768px) {
+
+    .cert-intro h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+
+    }
+    
+    .certification-card {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .certification-card img {
+        flex-shrink: 0;
+    }
+
+    .cert-content {
+        width: 100%;
+        padding-left: 2rem;
+    }
+
+    .cert-thumbnails {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    .cert-thumbnails img {
+        width: 250px;
+        height: 150px;
+        object-fit: contain;
+    }
+
+    .cert-content h3 {
+        margin-top: 0;
+    }
+
+    .skill-intro h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
 }
