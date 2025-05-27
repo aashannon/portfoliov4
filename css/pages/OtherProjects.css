@@ -37,6 +37,32 @@
     padding-bottom: 4rem;
 }
 
+.card-content .tall-img {
+    height: 500px;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    margin: 0 auto;
+    background-color: #2d2f36; /* dark neutral to match your site */
+    padding: 0.5rem;
+}
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------This is for @media 768px (tablet and higher) styling-----------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media (min-width: 768px) {
+    .card-content .tall-img {
+        width: 50%;
+    }
+}
 
 
 

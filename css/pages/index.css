@@ -5,28 +5,31 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  text-align: center;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 6rem;
+  align-items: center;   /* center the block itself */
+  padding: 1rem;
   position: relative;
 }
 
+
 .main-hero h1{
   font-size: 3rem;
+  color: white;
 }
 
 .main-hero h2{
   font-size: 1.5rem;
   align-items: flex-start;
   padding: 0;
+  color: #bf7973;
 }
 
 .main-hero p{
     padding: 0;
 }
 
+.main-hero span{
+    color:#66d9c4 ;
+}
 
 
 
@@ -36,19 +39,6 @@
 
 /*--------------------------This is for Landing Page Hero styling-------------------------------------*/
 
-.main-hero h1{
-    font-size: 3rem;
-    color: white;
-}
-
-.main-hero h2{
-    font-size: 1.5rem;
-    color: #bf7973;
-}
-
-.main-hero span{
-    color:#66d9c4 ;
-}
 
 .scroll-down {
   position: absolute;
@@ -100,51 +90,7 @@
 
 /*--------------------------This is for card styling-------------------------------------*/
 
-.projects-card {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 6rem;
-}
 
-.projects-card img {
-    border-radius: 0.5rem;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.projects-card p {
-    padding-bottom: 1rem;
-}
-
-.certification-card {
-    border-top: 2px solid #d1d5db05;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 6rem;
-}
-
-.certification-card img {
-    border-radius: 0.5rem;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.certification-card p {
-    padding-bottom: 1rem;
-}
-
-.otherprojects-card {
-    border-top: 2px solid #d1d5db05;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 6rem;
-}
-
-.otherprojects-card img {
-    border-radius: 0.5rem;
-}
-
-.otherprojects-card p {
-    padding-bottom: 1rem;
-}
 
 .aboutme-card {
     border-top: 2px solid #d1d5db05;
@@ -176,4 +122,45 @@
 
 
 
-/*--------------------------This is for testing styling-------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------This is for @media 768px (tablet and higher) styling-----------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media (min-width: 768px) {
+  .main-hero h1 {
+    font-size: 4rem; /* or larger, depending on how bold you want */
+  }
+
+  .main-hero h2 {
+    font-size: 2rem;
+  }
+
+  .main-hero p {
+    font-size: 1.25rem;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .main-hero h1 {
+    font-size: 5rem; /* or larger, depending on how bold you want */
+  }
+
+  .main-hero h2 {
+    font-size: 2.5rem;
+  }
+
+  .main-hero p {
+    font-size: 1.5rem;
+  }
+}
