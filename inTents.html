@@ -1,254 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Aaron Shannon | UX Interaction Developer</title>
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/base.css">
-        <link rel="stylesheet" href="css/layout.css">
-        <link rel="stylesheet" href="css/components.css">
-        <link rel="stylesheet" href="css/pages/inTents.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <link rel="icon" href="images/favicon.png" type="image/png">
-        <meta name="description" content="Aaron Shannon's UX design portfolio featuring user-centered design, wireframes, user research, case studies, and high-fidelity and low-fidelity prototypes.">
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>inTents Case Study | Aaron Shannon</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/pages/inTents.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  </head>
 
-    
-    <body>
-        <header class="topnav">
-            <!-- Logo -->
-            <a class="logo" href="index.html"><img src="images/logo.png" alt="Logo" /></a>
+  <body>
+    <header class="topnav">
+      <a class="logo" href="index.html">
+        <img src="images/logo.png" alt="Logo" />
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="inTents.html">inTents Case Study</a>
+        <a href="CertsandSkills.html">Certs & Skills</a>
+        <a href="OtherProjects.html">Other Projects</a>
+        <a href="AboutMe.html">About Me</a>
+      </nav>
+    </header>
 
-            <!-- Regular Navigation Links -->
-            <nav class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="inTents.html">inTents Case Study</a>
-                <a href="CertsandSkills.html">Certs & Skills</a>
-                <a href="OtherProjects.html">Other Projects</a>
-                <a href="AboutMe.html">About Me</a>
-            </nav>
+    <main>
+      <section class="hero-split" data-aos="fade-up">
+        <div class="hero-text">
+          <h1>inTents</h1>
+          <p>A UX case study creating a better way to plan and connect for camping enthusiasts.</p>
+        </div>
+        <div class="hero-image">
+          <img src="images/inTents-hero.png" alt="inTents case study mockup" />
+        </div>
+      </section>
 
-            <!-- Hamburger Icon -->
-            <div class="hamburger" onclick="toggleNav(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
+      <section class="casestudy-section" data-aos="fade-up">
+        <h2>Overview</h2>
+        <p>The inTents app brings together campers for trip planning, packing, and connecting — all in one centralized tool. This case study documents the full design process from research to prototype.</p>
+        <img src="images/inTents-overview.png" alt="Overview collage or research highlights" class="casestudy-image" />
+      </section>
 
-            <!-- Slide-out nav menu -->
-            <div id="myNav" class="overlay-nav">
-                <div class="overlay-content">
-                    <a href="index.html">Home</a>
-                    <a href="inTents.html">inTents Case Study</a>
-                    <a href="CertsandSkills.html">Certs & Skills</a>
-                    <a href="OtherProjects.html">Other Projects</a>
-                    <a href="AboutMe.html">About Me</a>
-                </div>
-            </div>
-        </header>
+      <section class="casestudy-section research-grid" data-aos="fade-up">
+        <div>
+          <h2>Research & Discovery</h2>
+          <p>I began with interviews and competitive analysis. Key findings revealed users often juggled multiple platforms to plan, pack, and communicate.</p>
+        </div>
+        <div class="research-findings">
+          <div class="finding-box">
+            <h3>Key Finding 1</h3>
+            <p>Campers used 3+ apps to coordinate trip plans and resources.</p>
+          </div>
+          <div class="finding-box">
+            <h3>Key Finding 2</h3>
+            <p>New campers struggled to find trusted information quickly.</p>
+          </div>
+        </div>
+      </section>
 
+      <section class="casestudy-section" data-aos="fade-up">
+        <h2>Design Process</h2>
+        <p>Initial sketches and wireframes helped shape functionality like trip creation, packing lists, and campsite search. I iterated with user feedback.</p>
+        <div class="casestudy-gallery">
+          <img src="images/inTents-paperwireframe.png" alt="Wireframe screen 1" />
+          <img src="images/lowFidelity-wireframes.png" alt="Wireframe screen 2" />
+          <img src="images/inTents-lowFidelityprototype.png" alt="Wireframe screen 3" />
+        </div>
+      </section>
 
-        <main>
-            <section class="intents-hero">
-                <img src="images/inTents-hero.png" alt="inTents case study image of phones with app displayed" />
-                <div class="hero-text">
-                    <h1>inTents</h1>
-                    <p>Short description of the project and link to appropriate page.</p>
-                </div>
-            </section>
+      <section class="casestudy-section" data-aos="fade-up">
+        <h2>Final UI</h2>
+        <p>The final design offers group messaging, checklists, and camp locator tools in an easy-to-use, mobile-first experience.</p>
+        <div class="casestudy-gallery">
+          <img src="images/inTents-highFidelitymockups.png" alt="Final UI mockups" />
+          <img src="images/inTents-highFidelityprototype.png" alt="Prototype preview" />
+        </div>
+      </section>
 
-            <section class="casestudy-card">
-                <p><b>Roles:</b> <br>UX Designer and Researcher</p>
-                <p><b>Target Users:</b> <br>New and Experienced Campers</p>
-                <p><b>Duration:</b> <br>2 Weeks</p>
-                <p><b>Problem:</b> <br>Users need to use multiple platforms to plan, communicate, and organize camping events. The secondary issue was that new campers do not have easy to access help resources.</p>
-                <p><b>Goal:</b> <br>Create a centralized location for users to plan camping trips, access helpful resources, and socialize with other campers.</p>
-            </section>
+      <section class="casestudy-section reflection-split" data-aos="fade-up">
+        <div>
+          <h2>What I Learned</h2>
+          <p>This project strengthened my ability to design for logistical coordination and adapt feedback into polished flows. The biggest challenge was balancing flexibility with simplicity.</p>
+        </div>
+        <div class="reflection-box">
+          <p><strong>Takeaway:</strong><br />Build tools that simplify—not complicate—real-life coordination.</p>
+        </div>
+      </section>
 
+      <div class="button-container" data-aos="fade-up">
+        <a href="index.html" class="button">Back to Portfolio</a>
+      </div>
+    </main>
 
-            <!--  Understanding the User -->
-            <section class="understanding-card">
-                <div class="understanding-header">
-                    <h2>Understanding the User</h2>
-                    <p>Primary and secondary research revealed that most users view camping as a group activity. The initial assumption was that single, or small groups of one to four people, were primary camping seekers. This was overshadowed by interviews with groups like Escapees RV Club, and other individuals. </p>
-                </div>
+    <footer>
+      <p>&copy; 2025 Aaron Shannon. All rights reserved.</p>
+    </footer>
 
-                <div class="pain-points">
-                    <h3>Pain Points:</h3>
-                    <div class="pain-point">
-                        <span>1</span>
-                        <p>Most sites and apps cater to a single camper or coordinator. Having a social option would allow for group coordination.</p>
-                    </div>
-                    <div class="pain-point">
-                        <span>2</span>
-                        <p>Most users value community and share across a variety of platforms. Adding social tools like chats and profiles will be essential.</p>
-                    </div>
-                    <div class="pain-point">
-                        <span>3</span>
-                        <p>Majority of campsites cater to physically active adults. Incorporating age appropriate sites and activities filters will be beneficial.</p>
-                    </div>
-                    <div class="pain-point">
-                        <span>4</span>
-                        <p>Some users had little knowledge of camping and reserved to ask for help. Implementing a ‘Help’ page with user led information will be also essential.</p>
-                    </div>
-                </div>
-            </section>
-
-
-
-            <!--  Ideation and Wireframing -->
-            <section class="ideawireframes-card">
-                <div class="ideation-header">
-                    <h2>Ideation & Wireframing</h2>
-                    <p>Brief description of the ideation process and wireframes.</p>
-                </div>
-
-                <section class="wireframe-section">
-                    <div class="wireframes">
-                        <img src="images/inTents-paperwireframe.png" alt="Wireframe 1" />
-                        <div class="wireframe-text">
-                            <h3>Paper Wireframes:</h3>
-                            <p>Brief description of the wireframing process.</p>
-                        </div>
-                    </div>
-
-                    <div class="wireframes">
-                        <img src="images/lowFidelity-wireframes.png" alt="Wireframe 2" />
-                        <div class="wireframe-text">
-                            <h3>Digital Wireframes:</h3>
-                            <p>Brief description of wireframing process.</p>
-                        </div>
-                    </div>
-
-                    <div class="wireframes">
-                        <img src="images/inTents-lowFidelityprototype.png" alt="Wireframe 1" />
-                        <div class="wireframe-text">
-                            <h3>Low-Fidelity Prototype:</h3>
-                            <p>Brief description of prototype.</p>
-                            <div class="button-container">
-                                <a href="inTents.html" class="button">View Case Study</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <div class="usability-testing">
-                    <div class="usability-header">
-                        <h3>Usability Testing</h3>
-                        <p>Brief description of the usability testing process.</p>
-                    </div>
-                    <div class="usability-grid">
-                        <div class="usability-item">
-                            <i class="fas fa-clipboard"></i>
-                            <p><b>Study Type:</b><br>Brief description of the type of study.</p>
-                        </div>
-                        <div class="usability-item">
-                            <i class="fas fa-users"></i>
-                            <p><b>Participants:</b><br>Brief description of the participants.</p>
-                        </div>
-                        <div class="usability-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <p><b>Location:</b><br>Brief description of the location.</p>
-                        </div>
-                        <div class="usability-item">
-                            <i class="fas fa-clock"></i>
-                            <p><b>Length:</b><br>Brief description of the length of the study.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="findings">
-                    <h3>Key Findings</h3>
-                    <div class="finding">
-                        <span>1</span>
-                        <p>A more prominent way to let users know what page of the app they were on. Larger icon or more contrast in the navigation bar.</p>
-                    </div>
-                    <div class="finding">
-                        <span>2</span>
-                        <p>Some users preferred to have access to the social postings upon opening the app.</p>
-                    </div>
-                    <div class="finding">
-                        <span>3</span>
-                        <p>Users suggested having a local social posting option that shows posts of users within the same campsite.</p>
-                    </div>
-                </div>
-            </section>
-
-
-            <!--  Final Design -->
-            <section class="finaldesign-card">
-                <div class="finaldesign-header">
-                    <h2>Final Design</h2>
-                    <p>Brief description of the final design process.</p>
-                </div>
-                <section class="wireframe-section">
-                    <div class="wireframes">
-                        <img src="images/inTents-highFidelitymockups.png" alt="Final Design 1" />
-                        <div class="wireframe-text">
-                            <h3>High-Fidelity Mockup:</h3>
-                            <p>Brief description of the alterations.</p>
-                        </div>
-                    </div>
-
-                    <div class="wireframes">
-                        <img src="images/inTents-highFidelityprototype.png" alt="Final Design 3" />
-                        <div class="wireframe-text">
-                            <h3>High-Fidelity Prototype:</h3> 
-                            <p>Brief description of the alterations and link to Figma.</p>
-                            <div class="button-container">
-                                <a href="inTents.html" class="button">View Case Study</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </section>
-
-            <section class="conclusion-card">
-                <div class="conclusion-header">
-                    <h2>Reflection & Next Steps</h2>
-                    <p>Brief description of the conclusion and what was learned.</p>
-                </div>
-
-                <div class="findings">
-                    <div class="finding">
-                        <span>1</span>
-                        <p>The very next step I would take it share it with the developer team to see if the ‘local’ posting of campers in the campgrounds would be possible, as it would be a game changer.</p>
-                    </div>
-                    <div class="finding">
-                        <span>2</span>
-                        <p>After confirming the possibilities, I would prototype the ‘local’ tab and run one more usability test to determine its viability and the user impact.</p>
-                    </div>
-                    <div class="finding">
-                        <span>3</span>
-                        <p>Finally, I would take the completed work, with the backing of user data analysis and vote of confidence of the engineers to present a concrete completed product to the stakeholders.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="contact-card">
-                <h2>Contact Me</h2>
-                <p>If you would like to get in touch, please reach out via email or connect with me on LinkedIn.</p>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/aaronmshannon" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/aashannon" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="mailto:ayren.shannon@me.com" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </section>
-
-            <footer>
-                <p>&copy; 2025 Aaron Shannon. All rights reserved.</p>
-            </footer>
-        </main>
-
-        <script src="js/scripts.js"></script>
-    </body>
-
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>

@@ -1,372 +1,131 @@
-/*--------------------------This is for inTents Hero styling-------------------------------------*/
-.intents-hero {
-  position: relative;
-  width: 100%;
-}
+/* HERO SECTION FIX */
 
-.intents-hero img {
-  width: 100%;
-  height: auto;
-  display: block;
+.hero-split {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+  color: #ffffff; /* Light text on dark background */
 }
 
 .hero-text {
-  position: absolute;
-  bottom: 10%;     /* Move up from the bottom of the image */
-  right: auto;       /* Space from right edge */
-  color: white;
-  padding: 1rem;
-  border-radius: 8px;
-  text-align: left;
-  max-width: 60%;
+  max-width: 600px;
+  text-align: center;
 }
 
-
-
-/*-----------------------------------This is for Case Study section styling-------------------------------------*/
-
-.casestudy-card {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 6rem;
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #66d9c4; /* Accent color */
 }
 
-.casestudy-card p {
-  padding-bottom: 0.5rem;
+.hero-text p {
+  font-size: 1.25rem;
+  color: #cccccc;
+  line-height: 1.6;
 }
 
-.casestudy-card b {
-  color: #bf7973;
-}
-
-
-
-
-
-
-/*-----------------------------------This is for Understanding User section styling-------------------------------------*/
-
-.understanding-card {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 6rem;
-  border-top: 2px solid #d1d5db05;
-}
-
-.understanding-header {
-  padding-bottom: 2rem;
-}
-
-.pain-points h3 {
-  padding-bottom: 1rem;
-}
-
-.pain-points p {
-  padding-bottom: 0.5rem;
-}
-
-.pain-points span {
-  border-radius: 50%;
-  background-color: #bf7973;
-  width: 2rem;
-  height: 2rem;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 0.5rem;
-  color: #343740;
-}
-
-
-
-
-
-
-/*-----------------------------------This is for Ideation and Wireframing section styling-------------------------------------*/
-
-.ideawireframes-card {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 6rem;
-  border-top: 2px solid #d1d5db05;
-}
-
-.ideation-header {
-  padding-bottom: 2rem;
-}
-
-.wireframes {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 2rem;
-}
-
-.wireframes img {
+.hero-image img {
   width: 100%;
+  max-width: 500px;
   height: auto;
   border-radius: 0.5rem;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
 }
 
-.usability-testing {
-  padding-bottom: 2rem;
-}
-
-.usability-testing h3{
-  padding-bottom: 1rem;
-}
-
-.usability-testing p {
-  padding-bottom: 0.5rem;
-}
-
-.usability-testing i {
-  color: #66d9c4;
-  font-size: 2rem;
-}
-
-.findings h3{
-  padding-bottom: 1rem;
-}
-
-.finding span {
-  border-radius: 50%;
-  background-color: #bf7973;
-  width: 2rem;
-  height: 2rem;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 0.5rem;
-  color: #343740;
-}
-
-.finding p {
-  padding-bottom: 0.5rem;
-}
-
-
-
-/*-----------------------------------This is for Final Design section styling-------------------------------------*/
-.finaldesign-card {
-  padding-left: 1rem;
-  padding-right: 1rem;
+.casestudy-section {
+  padding-top: 6rem;
   padding-bottom: 6rem;
-  border-top: 2px solid #d1d5db05;
+  border-bottom: 1px solid #e0e0e0;
 }
 
-.finaldesign-header {
-  padding-bottom: 2rem;
+.casestudy-gallery {
+  margin-top: 2rem;
+  gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.finaldesigns {
-  padding-bottom: 2rem;
+.casestudy-gallery img,
+.casestudy-image {
+  margin-bottom: 1.5rem;
+  max-width: 100%;
 }
 
-.finaldesigns img {
+.reflection-split {
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+/* ---------- Research & Discovery Grid ---------- */
+.research-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.research-text {
+  max-width: 600px;
+}
+
+.research-findings {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.finding-box {
+  background-color: #f5f5f5;
+  padding: 1rem;
   border-radius: 0.5rem;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
-
-
-
-
-/*-----------------------------------This is for Reflection and Next Steps section styling-------------------------------------*/
-.conclusion-card {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 6rem;
-  border-top: 2px solid #d1d5db05;
-}
-
-.conclusion-header {
-  padding-bottom: 2rem;
-}
-
-
-.nextsteps span{
-  border-radius: 50%;
-  background-color: #bf7973;
-  width: 2rem;
-  height: 2rem;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 0.5rem;
+.finding-box h3 {
+  margin-bottom: 0.5rem;
   color: #343740;
-}
-
-.nextsteps p {
-  padding-bottom: 0.5rem;
+  font-size: 1.1rem;
 }
 
 
 
-/*-----------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*--------------------------------------------------This is for @media 768px (tablet and higher) styling-----------------------------------------------*/
-/*-----------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Desktop layout */
 @media (min-width: 768px) {
-  h1 {
-    font-size: 3rem; /* Adjusted for larger screens */
-  }
-
-  .hero-text  {
-     bottom: 30%;
-  }
-
-  .casestudy-card {
-    padding-bottom: 12rem;
-  }
-
-  .casestudy-card p {
-    max-width: 500px;
-  }
-
-
-
-
-
-
-  /*--------------------------------------------------This is for @media 768px Understanding styling-----------------------------------------------*/
-
-  .understanding-card {
-    padding-bottom: 50vh;
-  }
-
-  .understanding-header p{
-    max-width: 500px;
-  }
-
-  .pain-points {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-  }
-
-  .pain-points h3 {
-    grid-column: 1 / -1; /* Let header span full width */
-  }
-
-  .pain-point {
-    flex-direction: column;
+  .hero-split {
+    flex-direction: row;
     align-items: center;
-    text-align: center;
-    max-width: 800px;
+    text-align: left;
   }
 
-  .pain-point span {
-    margin-right: 0;
-    margin-bottom: 0.5rem;
-  }
-
-  .pain-point p {
-    margin: 0;
-  }
-
-
-
-
-
-  /*--------------------------------------------------This is for @media 768px Ideation and Wireframing styling-----------------------------------------------*/
-
-  .ideawireframes-card {
-    padding-bottom: 50vh;
-  }
-
-  .ideation-header {
-    padding-bottom: 4rem;
-  }
-
-  .ideation-header p {
-    max-width: 500px;
-  }
-
-  .wireframe-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    padding-bottom: 50vh;
-  }
-
-  .wireframes {
-    padding-bottom: 0;
-  }
-
-  .wireframe-text p {
-    padding-bottom: 1rem;
-  }
-
-  .usability-testing {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    gap: 2rem;
-    padding-bottom: 50vh;
-  }
-
-  .usability-text {
+  .hero-text {
     flex: 1;
+    padding-right: 2rem;
   }
 
-  .usability-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2x2 layout */
+  .hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .casestudy-section {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .research-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
+  .research-findings {
     gap: 1.5rem;
-    flex: 1;
-    max-width: 1000px;
   }
-
-  .usability-item {
-    display: flex;
-    align-items: flex-start;
-  }
-
-  .usability-item i {
-    font-size: 2rem;
-    margin-right: 0.75rem;
-  }
-
-  .findings {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-  }
-
-  .findings h3 {
-    grid-column: 1 / -1; /* Let header span full width */
-  }
-
-  .finding {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    max-width: 400px;
-  }
-
-  .finding span {
-    margin-right: 0;
-    margin-bottom: 0.5rem;
-  }
-
-  .finding p {
-    margin: 0;
-  }
-
-
-/*--------------------------------------------------This is for @media 768px Final Design styling-----------------------------------------------*/
-
-
-  .finaldesign-header p {
-    max-width: 500px;
-  }
-
-
-/*--------------------------------------------------This is for @media 768px Conclusion styling-----------------------------------------------*/
-
-  .conclusion-card {
-    padding-bottom: 50vh;
-  }
- 
 }

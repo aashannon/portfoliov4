@@ -1,34 +1,48 @@
 /*--------------------------This is for Landing Page styling-------------------------------------*/
 
-.main-hero{
-  height: calc(100vh - 96px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;   /* center the block itself */
-  padding: 1rem;
-  position: relative;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+
+body {
+  font-family: 'Inter', sans-serif;
 }
 
+.main-hero {
+  height: calc(100vh - 96px);
+  background: linear-gradient(to bottom right, #1c1d22, #343740);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #d1d5db;
+}
 
-.main-hero h1{
+.hero-content {
+  max-width: 800px;
+  animation: fadeUp 1s ease-out;
+}
+
+.main-hero h1 {
   font-size: 3rem;
+  margin-bottom: 0.5rem;
   color: white;
 }
 
-.main-hero h2{
+.main-hero h2 {
   font-size: 1.5rem;
-  align-items: flex-start;
-  padding: 0;
-  color: #bf7973;
+  color: #66d9c4;
+  margin-bottom: 1rem;
 }
 
-.main-hero p{
-    padding: 0;
+.main-hero p {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
 }
 
-.main-hero span{
-    color:#66d9c4 ;
+.highlight {
+  color: #66d9c4;
 }
 
 
@@ -83,6 +97,16 @@
   }
 }
 
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 
 
@@ -93,7 +117,7 @@
 
 
 .aboutme-card {
-    border-top: 2px solid #d1d5db05;
+
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 6rem;
@@ -138,7 +162,7 @@
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media (min-width: 768px) {
   .main-hero h1 {
-    font-size: 4rem; /* or larger, depending on how bold you want */
+    font-size: 4rem;
   }
 
   .main-hero h2 {
@@ -162,5 +186,23 @@
 
   .main-hero p {
     font-size: 1.5rem;
+  }
+
+  .aboutme-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    text-align: left;
+  }
+
+  .aboutme-card img {
+    margin: 0;
+  }
+
+  .aboutme-card p,
+  .button-container {
+    max-width: 500px;
   }
 }

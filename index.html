@@ -10,17 +10,15 @@
         <link rel="stylesheet" href="css/components.css">
         <link rel="stylesheet" href="css/pages/index.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="icon" href="images/favicon.png" type="image/png">
         <meta name="description" content="Aaron Shannon's UX design portfolio featuring user-centered design, wireframes, user research, case studies, and high-fidelity and low-fidelity prototypes.">
     </head>
 
-    
     <body>
         <header class="topnav">
-            <!-- Logo -->
             <a class="logo" href="index.html"><img src="images/logo.png" alt="Logo" /></a>
-
-            <!-- Regular Navigation Links -->
             <nav class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="inTents.html">inTents Case Study</a>
@@ -28,15 +26,11 @@
                 <a href="OtherProjects.html">Other Projects</a>
                 <a href="AboutMe.html">About Me</a>
             </nav>
-
-            <!-- Hamburger Icon (mobile only)-->
             <div class="hamburger" onclick="toggleNav(this)">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
             </div>
-
-            <!-- Slide-out nav menu (mobile only)-->
             <div id="myNav" class="overlay-nav">
                 <div class="overlay-content">
                     <a href="index.html">Home</a>
@@ -48,62 +42,66 @@
             </div>
         </header>
 
-        
         <main>
             <section class="main-hero">
-                <div class="main-hero-content">
-                    <p><span>Hi, my name is,</span></p>
-                    <h1>Aaron Shannon</h1>
-                    <h2>UX Interaction Specialist & Engineer</h2>
-                    <p>Insert short description about self and goals.</p>
-                </div>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/aaronmshannon" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/aashannon" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="mailto:ayren.shannon@me.com" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-                <div class="scroll-down">
-                    <span>Scroll for More</span>
-                    <i class="fas fa-chevron-down"></i>
+                <div class="hero-content">
+                    <h1>Hey, I'm <span class="highlight">Aaron Shannon</span></h1>
+                    <h2>UX Interaction Designer & Engineer</h2>
+                    <p>I create meaningful, user-centered digital experiences — blending design thinking with technical precision.</p>
+                    <div class="button-container">
+                        <a href="#projects" class="button">View My Work</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/aaronmshannon" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/aashannon" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:ayren.shannon@me.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
                 </div>
             </section>
 
-            <section class="projects-card">
+            <section class="projects-card" id="projects">
                 <h2>Case Studies</h2>
-                <div class="section-card">
-                    <div class="card-content">
-                        <img src="images/inTents-collage.png" alt="inTents case study image of phones with app displayed" />
-                        <div class="card-text">
-                            <h3>inTents</h3>
-                            <p>Short description of the project and link to appropriate page.</p>
-                            <div class="button-container">
-                                <a href="inTents.html" class="button">View Case Study</a>
-                            </div>
+                <div class="project-module" data-aos="zoom-in-up" data-aos-delay="0">
+                    <div class="project-image">
+                        <img src="images/inTents-collage.png" alt="inTents case study image" />
+                    </div>
+                    <div class="project-content">
+                        <h3>inTents</h3>
+                        <p>A community-focused app for campers to coordinate trips, share resources, and discover new outdoor opportunities — all in one place.</p>
+                        <ul class="project-tags">
+                            <li>UX Research</li>
+                            <li>UI Design</li>
+                            <li>Prototyping</li>
+                        </ul>
+                        <div class="button-container">
+                            <a href="inTents.html" class="button">View Case Study</a>
                         </div>
                     </div>
                 </div>
-
-                <!----------------------------------------------------------------------------------------------------------------->
-                <!--------------------------------------- Add more project cards as needed ---------------------------------------->
-                <!----------------------------------------------------------------------------------------------------------------->
             </section>
 
             <section class="projects-card">
                 <h2>Certifications & Skills</h2>
-                <div class="section-card">
-                    <div class="card-content">
+                <div class="project-module" data-aos="zoom-in-up" data-aos-delay="100">
+                    <div class="project-image">
                         <img src="images/certsandskills.png" alt="collage of different certifications and word cloud of skills" />
-                        <div class="card-text">
-                            <p>Short description of the certifications and skills with link to appropriate page.</p>
-                            <div class="button-container">
-                                <a href="CertsandSkills.html" class="button">Learn More</a>
-                            </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Certifications & Skills</h3>
+                        <p>Demonstrated knowledge and hands-on expertise through industry-recognized certifications in UX design, research, prototyping, and project management.</p>
+                        <ul class="project-tags">
+                            <li>Google UX Cert</li>
+                            <li>Microsoft UX Cert</li>
+                            <li>Project Management</li>
+                        </ul>
+                        <div class="button-container">
+                            <a href="CertsandSkills.html" class="button">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -111,25 +109,43 @@
 
             <section class="projects-card">
                 <h2>Other Projects</h2>
-                <div class="section-card">
-                    <div class="card-content">
+                <div class="project-module" data-aos="zoom-in-up" data-aos-delay="200">
+                    <div class="project-image">
                         <img src="images/otherProjefcts-thumbnail.png" alt="collage or other projects concerning media, video, and programs" />
-                        <div class="card-text">
-                            <p>Short description of the projects and link to appropriate page.</p>
-                            <div class="button-container">
-                                <a href="OtherProjects.html" class="button">Learn More</a>
-                            </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Other Projects</h3>
+                        <p>A mix of technical, visual, and creative projects including custom-built applications, data tools, and multimedia pieces demonstrating end-to-end design thinking.</p>
+                        <ul class="project-tags">
+                            <li>Web Dev</li>
+                            <li>Visual Design</li>
+                            <li>Multimedia</li>
+                        </ul>
+                        <div class="button-container">
+                            <a href="OtherProjects.html" class="button">Learn More</a>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="aboutme-card">
+            <section class="projects-card">
                 <h2>About Me</h2>
-                <img src="images/thumbnail_profile_photo.jpg" alt="Profile picture of Aaron Shannon" />
-                <p>Short description about personal goals, past, and more with link to appropriate page.</p>
-                <div class="button-container">
-                    <a href="AboutMe.html" class="button">Learn More</a>
+                <div class="project-module" data-aos="zoom-in-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <img src="images/thumbnail_profile_photo.jpg" alt="Profile picture of Aaron Shannon" />
+                    </div>
+                    <div class="project-content">
+                        <h3>About Me</h3>
+                        <p>I'm a UX Interaction Developer with a passion for creating intuitive, user-centered designs. My background blends computer science and design, and I thrive at the intersection of creativity and logic.</p>
+                        <ul class="project-tags">
+                            <li>Empathy</li>
+                            <li>Attention to Detail</li>
+                            <li>Design Thinking</li>
+                        </ul>
+                        <div class="button-container">
+                            <a href="AboutMe.html" class="button">Learn More</a>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -154,9 +170,9 @@
             </footer>
         </main>
 
+        
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="js/scripts.js"></script>
         <script src="js/scroll.js"></script>
     </body>
-
-
 </html>
