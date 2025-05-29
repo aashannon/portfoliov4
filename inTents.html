@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/components.css" />
     <link rel="stylesheet" href="css/pages/inTents.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <meta name="description" content="Aaron Shannon's UX design portfolio featuring user-centered design, wireframes, user research, case studies, and high-fidelity and low-fidelity prototypes.">
   </head>
 
   <body>
@@ -18,12 +21,26 @@
         <img src="images/logo.png" alt="Logo" />
       </a>
       <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="inTents.html">inTents Case Study</a>
-        <a href="CertsandSkills.html">Certs & Skills</a>
-        <a href="OtherProjects.html">Other Projects</a>
-        <a href="AboutMe.html">About Me</a>
-      </nav>
+                <a href="index.html">Home</a>
+                <a href="inTents.html">inTents Case Study</a>
+                <a href="CertsandSkills.html">Certs & Skills</a>
+                <a href="OtherProjects.html">Other Projects</a>
+                <a href="AboutMe.html">About Me</a>
+            </nav>
+            <div class="hamburger" onclick="toggleNav(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div id="myNav" class="overlay-nav">
+                <div class="overlay-content">
+                    <a href="index.html">Home</a>
+                    <a href="inTents.html">inTents Case Study</a>
+                    <a href="CertsandSkills.html">Certs & Skills</a>
+                    <a href="OtherProjects.html">Other Projects</a>
+                    <a href="AboutMe.html">About Me</a>
+                </div>
+            </div>
     </header>
 
     <main>
@@ -40,7 +57,10 @@
       <section class="casestudy-section" data-aos="fade-up">
         <h2>Overview</h2>
         <p>The inTents app brings together campers for trip planning, packing, and connecting — all in one centralized tool. This case study documents the full design process from research to prototype.</p>
-        <img src="images/inTents-overview.png" alt="Overview collage or research highlights" class="casestudy-image" />
+        <figure>
+          <img src="images/inTents-overview.png" alt="Overview collage or research highlights" class="casestudy-image" />
+          <figcaption class="gallery-caption">Low-fidelity wireframe for onboarding</figcaption>
+        </figure>
       </section>
 
       <section class="casestudy-section research-grid" data-aos="fade-up">
@@ -57,6 +77,14 @@
             <h3>Key Finding 2</h3>
             <p>New campers struggled to find trusted information quickly.</p>
           </div>
+          <div class="finding-box">
+            <h3>Key Finding 3</h3>
+            <p>New campers struggled to find trusted information quickly.</p>
+          </div>
+          <div class="finding-box">
+            <h3>Key Finding 4</h3>
+            <p>New campers struggled to find trusted information quickly.</p>
+          </div>
         </div>
       </section>
 
@@ -64,9 +92,18 @@
         <h2>Design Process</h2>
         <p>Initial sketches and wireframes helped shape functionality like trip creation, packing lists, and campsite search. I iterated with user feedback.</p>
         <div class="casestudy-gallery">
-          <img src="images/inTents-paperwireframe.png" alt="Wireframe screen 1" />
-          <img src="images/lowFidelity-wireframes.png" alt="Wireframe screen 2" />
-          <img src="images/inTents-lowFidelityprototype.png" alt="Wireframe screen 3" />
+          <figure>
+            <img src="images/inTents-paperwireframe.png" alt="Wireframe screen 1" />
+            <figcaption class="gallery-caption">Low-fidelity wireframe for onboarding</figcaption>
+          </figure>
+          <figure>
+            <img src="images/lowFidelity-wireframes.png" alt="Wireframe screen 2" />
+            <figcaption class="gallery-caption">Low-fidelity wireframe for onboarding</figcaption>
+          </figure>
+          <figure>
+            <img src="images/inTents-lowFidelityprototype.png" alt="Wireframe screen 3" />
+            <figcaption class="gallery-caption">Low-fidelity wireframe for onboarding</figcaption>
+          </figure>
         </div>
       </section>
 
@@ -74,8 +111,14 @@
         <h2>Final UI</h2>
         <p>The final design offers group messaging, checklists, and camp locator tools in an easy-to-use, mobile-first experience.</p>
         <div class="casestudy-gallery">
-          <img src="images/inTents-highFidelitymockups.png" alt="Final UI mockups" />
-          <img src="images/inTents-highFidelityprototype.png" alt="Prototype preview" />
+          <figure> 
+            <img src="images/inTents-highFidelitymockups.png" alt="Final UI mockups" />
+            <figcaption class="gallery-caption">Low-fidelity wireframe for onboarding</figcaption>
+          </figure>
+          <figure>
+            <img src="images/inTents-highFidelityprototype.png" alt="Prototype preview" />
+            <figcaption class="gallery-caption">Low-fidelity wireframe for onboarding</figcaption>
+          </figure>
         </div>
       </section>
 

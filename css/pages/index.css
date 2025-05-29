@@ -1,11 +1,5 @@
 /*--------------------------This is for Landing Page styling-------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
-
-
-body {
-  font-family: 'Inter', sans-serif;
-}
 
 .main-hero {
   height: calc(100vh - 96px);
