@@ -70,19 +70,38 @@ function activateAaronUnleashedMode() {
   document.body.classList.add("aaron-unleashed");
 }
 
-const mobileKonamiCode = ["up", "up", "down", "down", "left", "right", "left", "right"];
-let mobileIndex = 0;
+const swipeKonamiCode = ["up", "up", "down", "down", "left", "right", "left", "right"];
+let swipeIndex = 0;
 
-["up", "down", "left", "right"].forEach(id => {
-  document.getElementById("zone-" + id).addEventListener("click", () => {
-    if (id === mobileKonamiCode[mobileIndex]) {
-      mobileIndex++;
-      if (mobileIndex === mobileKonamiCode.length) {
-        activateAaronUnleashedMode(); // Reuse same function
-        mobileIndex = 0;
-      }
-    } else {
-      mobileIndex = 0;
+let touchStartX = 0;
+let touchStartY = 0;
+
+document.addEventListener("touchstart", function (e) {
+  const touch = e.changedTouches[0];
+  touchStartX = touch.screenX;
+  touchStartY = touch.screenY;
+}, false);
+
+document.addEventListener("touchend", function (e) {
+  const touch = e.changedTouches[0];
+  const deltaX = touch.screenX - touchStartX;
+  const deltaY = touch.screenY - touchStartY;
+
+  let direction = "";
+
+  if (Math.abs(deltaX) > Math.abs(deltaY)) {
+    direction = deltaX > 30 ? "right" : deltaX < -30 ? "left" : "";
+  } else {
+    direction = deltaY > 30 ? "down" : deltaY < -30 ? "up" : "";
+  }
+
+  if (direction === swipeKonamiCode[swipeIndex]) {
+    swipeIndex++;
+    if (swipeIndex === swipeKonamiCode.length) {
+      activateAaronUnleashedMode();
+      swipeIndex = 0;
     }
-  });
-});
+  } else if (direction) {
+    swipeIndex = 0;
+  }
+}, false);
