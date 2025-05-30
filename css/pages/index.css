@@ -2,12 +2,13 @@
 
 
 .main-hero {
-  height: calc(100vh - 96px);
+  min-height: calc(100vh - 96px); /* More flexible than fixed height */
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem 1rem;
+  padding: 6rem 1rem 2rem; /* Ensure space for nav/logo */
   color: #d1d5db;
+  position: relative;
 }
 
 .hero-content {
