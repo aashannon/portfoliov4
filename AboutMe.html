@@ -10,6 +10,8 @@
         <link rel="stylesheet" href="css/components.css">
         <link rel="stylesheet" href="css/pages/AboutMe.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="icon" href="images/favicon.png" type="image/png">
         <meta name="description" content="Aaron Shannon's UX design portfolio featuring user-centered design, wireframes, user research, case studies, and high-fidelity and low-fidelity prototypes.">
     </head>
@@ -51,21 +53,8 @@
 
         <main>
             <section class="aboutme-hero">
-                <img src="images/thumbnail_profile_photo.jpg" alt="Aaron Shannon" />
-                <div class="aboutme-content">
-                    <h1>Aaron Shannon</h1>
-                    <p class="tagline">Creating user-centered designs that enhance the digital experience.</p>
-                    <p>I'm a UX Interaction Developer with a passion for creating user-centered designs that enhance the digital experience. My goal is to bridge the gap between technology and users, ensuring that every interaction is intuitive and enjoyable.</p>
-                    <p>I have a background in computer science and design, which allows me to approach problems from both a technical and creative perspective. I believe that understanding the user's needs is key to creating effective solutions.</p>
-                    <p>My skills include user research, wireframing, prototyping, and usability testing. I am proficient in various design tools and have experience working in agile environments. My strengths lie in my ability to empathize with users and my attention to detail.</p>
-
-                    <h2>Testimonials</h2>
-                    <p>"Aaron is a fantastic UX designer. His attention to detail and understanding of user needs is unparalleled." - Former Colleague</p>
-                    <p>"Working with Aaron was a game-changer for our project. He brought fresh ideas and a user-centered approach that made all the difference." - Client</p>
-                
-                    <h2>Fun Facts</h2>
-                    <p>In my spare time, I enjoy hiking, photography, and exploring new technologies. I also love to travel and experience different cultures, which inspires my design work.</p>
-
+                <div>
+                    <img src="images/thumbnail_profile_photo.jpg" alt="Aaron Shannon" />
                     <div class="social-links">
                         <a href="https://www.linkedin.com/in/aaronmshannon" target="_blank" aria-label="LinkedIn">
                             <i class="fab fa-linkedin"></i>
@@ -77,16 +66,60 @@
                             <i class="fas fa-envelope"></i>
                         </a>
                     </div>
+                    <div class="button-container">
+                        <a href="UXDesignATS.pdf" class="button" target="_blank">View My Résumé</a>
+                    </div>
+                </div>
+                <div class="aboutme-content">
+                    <h1>Aaron  <em>'Chescher'</em>  Shannon</h1>
+                    <p class="tagline"><em>Creating user-centered designs that enhance the digital experience.</em></p>
+                    <p><br>I'm a UX Interaction Developer with a passion for creating user-centered designs that 
+                        enhance the digital experience. My goal is to bridge the gap between technology and 
+                        users, ensuring that every interaction is intuitive and enjoyable.<br>I have a background
+                         in computer science and design, which allows me to approach problems from both a 
+                         technical and creative perspective. <br>I believe that understanding the user's needs is 
+                         key to creating effective solutions. My skills include user research, wireframing, 
+                         prototyping, and usability testing. I am proficient in various design tools and have 
+                         experience working in agile environments. My strengths lie in my ability to empathize 
+                         with users and my attention to detail.</p>
+
+                    <section class="testimonials-section">
+                        <h2>Testimonials</h2>
+                        <div class="testimonial">
+                            <p class="quote">"Aaron is a great Lead. He's attentive and always willing to help. Sometimes, though, he needs to take a break."</p>
+                            <p class="author">— Jenn Nguyen, UX Designer at Phonic Bloom</p>
+                        </div>
+                        <div class="testimonial">
+                            <p class="quote">"He's always finding ways to make technology easier for me to understand. He uses analogies, and I just get it. Amazing!"</p>
+                            <p class="author">— Doug Wilson, Client</p>
+                        </div>
+                        <div class="testimonial">
+                            <p class="quote">"Aaron is great with creative solutions. His attention to subtle nuances and eye-catching designs made his projects stand out."</p>
+                            <p class="author">— Chris Dreger, UI/UX Professor at WSUV</p>
+                        </div>
+                    </section>
+                
+                    <h2>Fun Facts</h2>
+                    <p>In my spare time, I enjoy building Magic: The Gathering decks that favor strategy over brute force; 
+                        the kind that quietly shift the game until opponents realize they’ve walked into a trap. 
+                        My friends say I have a knack for subtle setups and clever plays, which also explains my nickname 'The Cheshire Cat'.</p>
                 </div>
             </section>
 
-            <footer>
-                <p>&copy; 2025 Aaron Shannon. All rights reserved.</p>
-            </footer>
+            
         </main>
 
+        <footer>
+            <p>&copy; 2025 Aaron Shannon. All rights reserved.</p>
+        </footer>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="js/scripts.js"></script>
+        <div id="konami-mobile">
+            <div class="konami-zone" id="zone-up"></div>
+            <div class="konami-zone" id="zone-down"></div>
+            <div class="konami-zone" id="zone-left"></div>
+            <div class="konami-zone" id="zone-right"></div>
+        </div>
     </body>
-
-
 </html>

@@ -10,6 +10,8 @@
         <link rel="stylesheet" href="css/components.css">
         <link rel="stylesheet" href="css/pages/OtherProjects.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="icon" href="images/favicon.png" type="image/png">
         <meta name="description" content="Aaron Shannon's UX design portfolio featuring user-centered design, wireframes, user research, case studies, and high-fidelity and low-fidelity prototypes.">
     </head>
@@ -51,23 +53,34 @@
 
         <!-- Main content -->
         <main>
-            <section class="hero">
-                <p>Brief introduction of other projects.</p>
+            <section class="page-header">
+                <div class="container">
+                    <h1>Other Projects</h1>
+                    <p>Part portfolio, part time capsule; this is where code met creativity. 
+                        These aren’t just side projects, they’re stepping stones. From early 
+                        experiments to polished creations, each one shaped how I think, design, and build.</p>
+                </div>
             </section>
 
             <section class="projects-card">
                 <h2>Technical Projects</h2>
-                <p>Short description of technical projects</p>
+                <p>Here’s where things get nerdy (in the best way). I built my own search engine from 
+                    scratch and coded a Connect 4 game with a rough-around-the-edges AI. These 
+                    projects show what happens when curiosity meets code.</p>
 
                     <div class="section-card">
                         <div class="card-content">
-                            <img src="images/searchEngine.png" alt="Project 1" />
+                            <img src="images/searchEngine.png" alt="Image of a heat map of the United States and some visuals of filter functionality in the background" />
                             <div class="card-text">
-                                <h3>Project 1</h3>
-                                <p>Short description of the project and link to appropriate page.</p>
-                                <p><b>Tags:</b> tag1, tag2, etc...</p>
+                                <h3>Search Engine</h3>
+                                <p>A fully functional search engine built from scratch using Python. 
+                                    It crawls web pages, indexes content, and ranks results using basic 
+                                    relevance algorithms. This project challenged me to think critically 
+                                    about data structures, information retrieval, and backend logic; all 
+                                    while building a usable tool from the ground up.</p>
+                                <p><b>Tags:</b> Python, Web Crawling, Indexing, Search Algorithms, Information Retrieval, Data Structures, Backend Development</p>
                                 <div class="button-container">
-                                    <a href="inTents.html" class="button">View Case Study</a>
+                                    <a href="https://github.com/aashannon/search_engine_final" class="button" target="_blank" rel="noopener noreferrer">View Code</a>
                                 </div>
                             </div>
                         </div>
@@ -77,14 +90,17 @@
                     <div class="section-card">
                         <div class="card-content">
                             <div class="video-container">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/f39IwbkLQEo?si=da7iHAu6Ur5jE1wy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/f39IwbkLQEo?si=da7iHAu6Ur5jE1wy" title="Gameplay demo of Connect 4 against AI opponent" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
                             <div class="card-text">
-                                <h3>Project 2</h3>
-                                <p>Short description of the project and link to appropriate page.</p>
-                                <p><b>Tags:</b> tag1, tag2, etc...</p>
+                                <h3>Connect 4 with AI Player</h3>
+                                <p>A digital version of Connect 4 built with Python and a basic AI opponent. 
+                                    The AI uses a simple heuristic to block and win moves, introducing strategic 
+                                    gameplay without complex algorithms. This project sharpened my skills in game 
+                                    logic, user interaction, and implementing decision-making with code.</p>
+                                <p><b>Tags:</b> Python, Game Development, Heuristic AI, Turn-Based Logic, User Interaction, Problem Solving</p>
                                 <div class="button-container">
-                                    <a href="inTents.html" class="button">View Case Study</a>
+                                    <a href="https://github.com/aashannon/CS121-Final" class="button" target="_blank" rel="noopener noreferrer">View Code</a>
                                 </div>
                             </div>
                         </div>
@@ -93,18 +109,20 @@
 
             <section class="projects-card">
                 <h2>Visual Design</h2>
-                <p>Short description of media projects</p>
+                <p>These visual designs demonstrate my ability to communicate ideas through 
+                    thoughtful layout, hierarchy, and aesthetics. Each project emphasizes 
+                    user clarity while maintaining a polished visual style.</p>
 
                 <div class="section-card">
                     <div class="card-content">
                         <img src="images/infograph.png" alt="Project 1" class="tall-img"/>
                         <div class="card-text">
-                            <h3>Project 1</h3>
-                            <p>Short description of the project and link to appropriate page.</p>
-                            <p><b>Tags:</b> tag1, tag2, etc...</p>
-                            <div class="button-container">
-                                <a href="inTents.html" class="button">View Case Study</a>
-                            </div>
+                            <h3>Infograph</h3>
+                            <p>This infographic visualizes the UX design process, 
+                                blending data and design into a clear, engaging format. 
+                                Created using Adobe Photoshop and Illustrator, it demonstrates 
+                                both technical skill and a strong eye for visual hierarchy and clarity.</p>
+                            <p><b>Tags:</b> Infographic, Visual Design, Adobe Photoshop, Adobe Illustrator, UX Process, Layout Design, Data Visualization</p>
                         </div>
                     </div>
                 </div>
@@ -112,20 +130,23 @@
 
             <section class="projects-card">
                 <h2>Multimedia & Animation</h2>
-                <p>Short description of animation project.</p>
+                <p>Not everything I make sits still. These animations and multimedia pieces are where 
+                    I let design move, breathe, and play. Whether it’s motion graphics or interactive 
+                    visuals, each project explores a different layer of how users experience motion.</p>
 
                 <div class="section-card">
                     <div class="card-content">
                         <div class="video-container">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/I2uO1ssn9v0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/I2uO1ssn9v0" title="Culture Food Festival Signage Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                         <div class="card-text">
-                            <h3>Project 1</h3>
-                            <p>Short description of the project and link to appropriate page.</p>
-                            <p><b>Tags:</b> tag1, tag2, etc...</p>
-                            <div class="button-container">
-                                <a href="inTents.html" class="button">View Case Study</a>
-                            </div>
+                            <h3>Culture Food Wars Signage</h3>
+                            <p>A motion signage video designed for a fictional cultural food 
+                                festival, blending vibrant visuals and bold typography to showcase 
+                                global cuisines in a dynamic format. Created in Adobe After Effects 
+                                with assets crafted in Photoshop and Illustrator, the animation is 
+                                rhythmically synced to an energetic soundtrack to enhance visual engagement.</p>
+                            <p><b>Tags:</b> Motion Design, After Effects, Illustrator, Visual Storytelling, Adobe Creative Suite</p>
                         </div>
                     </div>
                 </div>
@@ -133,17 +154,24 @@
 
             <section class="projects-card">
                 <h2>Where I Came From</h2>
-                <p>Short description of older web projects</p>
+                <p>A nostalgic nod to the early days of my journey; rough edges, 
+                    clunky layouts, and all. These early web projects may be simple, 
+                    but they highlight my growth from curious tinkerer to thoughtful 
+                    designer and developer. Every awkward navbar and off-center div 
+                    helped shape the skills I have today.</p>
 
                 <div class="section-card">
                     <div class="card-content">
-                        <img src="images/recipeWebsite.png" alt="Project 1" />
+                        <img src="images/recipeWebsite.png" alt="Responsive website layout for a Cajun gumbo recipe, shown in both mobile and desktop views"/>
                         <div class="card-text">
-                            <h3>Project 1</h3>
-                            <p>Short description of the project and link to appropriate page.</p>
-                            <p><b>Tags:</b> tag1, tag2, etc...</p>
+                            <h3>Recipe</h3>
+                            <p>A clean, responsive recipe website built to adapt beautifully 
+                                across devices. This project was a hands-on way to explore 
+                                flexible layouts, scalable typography, and mobile-first design. 
+                                All while serving up some tasty UI elements.</p>
+                            <p><b>Tags:</b> Responsive Design, HTML, CSS, Web Layout, Mobile-First</p>
                             <div class="button-container">
-                                <a href="inTents.html" class="button">View Case Study</a>
+                                <a href="https://dtc-wsuv.org/ashannon23/recipe/" class="button" target="_blank" rel="noopener noreferrer">View Case Study</a>
                             </div>
                         </div>
                     </div>
@@ -151,20 +179,23 @@
 
                 <div class="section-card">
                     <div class="card-content">
-                        <img src="images/oldPortfolio.png" alt="Project 2" />
+                        <img src="images/oldPortfolio.png" alt="Responsive website layout for first portfolio, shown in both mobile and desktop views"/>
                         <div class="card-text">
-                            <h3>Project 2</h3>
-                            <p>Short description of the project and link to appropriate page.</p>
-                            <p><b>Tags:</b> tag1, tag2, etc...</p>
+                            <h3>First Portfolio</h3>
+                            <p>My very first portfolio website. A humble beginning that combined basic HTML, 
+                                inline styles, and lots of experimentation. While rough around the edges, 
+                                it was the launchpad for everything that came after, helping me explore 
+                                layout, structure, and the confidence to improve.</p>
+                            <p><b>Tags:</b> HTML, CSS, Javascript, Python, Responsive Design, Mobile First</p>
                             <div class="button-container">
-                                <a href="inTents.html" class="button">View Case Study</a>
+                                <a href="https://dtc-wsuv.org/ashannon23/old-portfolio/index.html" class="button" target="_blank" rel="noopener noreferrer">View Case Study</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="contact">
+            <section class="contact-card">
                 <h2>Contact Me</h2>
                 <p>If you would like to get in touch, please reach out via email or connect with me on LinkedIn.</p>
                 <div class="social-links">
@@ -185,8 +216,15 @@
             </footer>
         </main>
 
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="js/scripts.js"></script>
+
+        <button id="scrollToTop" title="Back to top"><i class="fas fa-chevron-up"></i></button>
+        <div id="konami-mobile">
+            <div class="konami-zone" id="zone-up"></div>
+            <div class="konami-zone" id="zone-down"></div>
+            <div class="konami-zone" id="zone-left"></div>
+            <div class="konami-zone" id="zone-right"></div>
+        </div>
     </body>
-
-
 </html>

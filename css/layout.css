@@ -6,7 +6,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between; /* optional: push logo left, hamburger right */
-    background-color: #343740;
     height: 96px;
     padding: 0 1rem;
     z-index: 2;
@@ -37,7 +36,6 @@
 
 .active {
     color: white;
-    background-color: #343740;
 }
 
 /* Hamburger styles */
@@ -80,7 +78,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  background-color: #343740;
+  background-color: #1c1d22;
   overflow-x: hidden;
   transition: 0.1s;
   z-index: 1000;
@@ -88,7 +86,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: width 0.2s ease;
+  transition: width 0.1s ease;
 }
 
 .overlay-nav.open {
@@ -102,7 +100,6 @@
   font-size: 36px;
   color: #66d9c4;
   display: block;
-  text-align: center;
   transition: 0.2s;
   border-radius: 1rem;
 }
@@ -151,16 +148,14 @@
 
 /* Footer Styles */
 footer {
-  background-color: #f9f9f9;
   text-align: center;
-  padding: 2rem 1rem;
-  margin-top: 4rem;
+  padding: 1rem 1rem;
   font-size: 0.9rem;
   color: #777;
 }
 
 .container {
-  max-width: 1200px;
+  text-align: left;
   margin: 0 auto;
 }
 

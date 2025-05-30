@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/components.css" />
     <link rel="stylesheet" href="css/pages/inTents.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="images/favicon.png" type="image/png">
     <meta name="description" content="Aaron Shannon's UX design portfolio featuring user-centered design, wireframes, user research, case studies, and high-fidelity and low-fidelity prototypes.">
@@ -47,7 +49,10 @@
       <section class="hero-split" data-aos="fade-up">
         <div class="hero-text">
           <h1>inTents</h1>
-          <p>A UX case study creating a better way to plan and connect for camping enthusiasts.</p>
+          <p>A UX case study focused on simplifying how campers plan trips, get help, and stay connected. All in one place.</p>
+          <div class="button-container">
+            <a href="https://docs.google.com/presentation/d/1kqj55rHlgp6IXB6rv2oYPTPkSEg7L5AR_MMdLCA1Kr0/edit?usp=sharing" class="button" target="_blank" rel="noopener noreferrer">See Full Study</a>
+          </div>
         </div>
         <div class="hero-image">
           <img src="images/inTents-hero.png" alt="inTents case study mockup" />
@@ -55,35 +60,46 @@
       </section>
 
       <section class="casestudy-section" data-aos="fade-up">
-        <h2>Overview</h2>
-        <p>The inTents app brings together campers for trip planning, packing, and connecting — all in one centralized tool. This case study documents the full design process from research to prototype.</p>
-        <figure>
-          <img src="images/inTents-overview.png" alt="Overview collage or research highlights" class="casestudy-image" />
-          <figcaption class="gallery-caption">Low-fidelity wireframe for onboarding</figcaption>
-        </figure>
+        <div class="casestudy-split">
+          <div class="casestudy-text">
+            <h2>Overview</h2>
+            <p>
+              Tired of scattered plans, group texts, and forgotten gear, I set out to design a better way for 
+              campers to coordinate trips. inTents blends research-driven design with real-world functionality. Bringing 
+              people together to plan, pack, and connect in one seamless experience. From primary research to hi-fi prototypes, 
+              this case study captures the journey of turning messy group planning into a smooth, shared adventure.
+            </p>
+          </div>
+          <figure class="casestudy-figure">
+            <img src="images/inTents-overview.png" alt="Overview collage of research highlights" class="casestudy-image" />
+            <figcaption class="gallery-caption">Collage of Personas and Journey Maps</figcaption>
+          </figure>
+        </div>
       </section>
 
       <section class="casestudy-section research-grid" data-aos="fade-up">
         <div>
           <h2>Research & Discovery</h2>
-          <p>I began with interviews and competitive analysis. Key findings revealed users often juggled multiple platforms to plan, pack, and communicate.</p>
+          <p>I began with user interviews and competitive analysis. Key findings revealed that campers often 
+            juggled multiple platforms to plan, pack, and communicate; with one person usually stuck doing 
+            all the coordination. This not only caused frustration, but sometimes led to plans falling through entirely.</p>
         </div>
         <div class="research-findings">
           <div class="finding-box">
-            <h3>Key Finding 1</h3>
-            <p>Campers used 3+ apps to coordinate trip plans and resources.</p>
+            <h3>Limited Options</h3>
+            <p>Most sites and apps cater to a single camper or coordinator. Having a social option would allow for group coordination.</p>
           </div>
           <div class="finding-box">
-            <h3>Key Finding 2</h3>
-            <p>New campers struggled to find trusted information quickly.</p>
+            <h3>Social</h3>
+            <p>Most users value community and share across a variety of platforms. Adding social tools like chats and profiles will be essential.</p>
           </div>
           <div class="finding-box">
-            <h3>Key Finding 3</h3>
-            <p>New campers struggled to find trusted information quickly.</p>
+            <h3>Coordination</h3>
+            <p>Most users stopped trying to book camping trips because of all the work it takes to go between websites and balance schedules.</p>
           </div>
           <div class="finding-box">
-            <h3>Key Finding 4</h3>
-            <p>New campers struggled to find trusted information quickly.</p>
+            <h3>Experience</h3>
+            <p>Some users had little knowledge of camping and reserved to ask for help. Implementing a ‘Help’ page with user led information will be also essential.</p>
           </div>
         </div>
       </section>
@@ -93,31 +109,37 @@
         <p>Initial sketches and wireframes helped shape functionality like trip creation, packing lists, and campsite search. I iterated with user feedback.</p>
         <div class="casestudy-gallery">
           <figure>
-            <img src="images/inTents-paperwireframe.png" alt="Wireframe screen 1" />
-            <figcaption class="gallery-caption">Low-fidelity wireframe for onboarding</figcaption>
+            <img src="images/inTents-paperwireframe.png" alt="Image of eight different ideations of the inTents layout" />
+            <figcaption class="gallery-caption">Paper wireframe ideations</figcaption>
           </figure>
           <figure>
-            <img src="images/lowFidelity-wireframes.png" alt="Wireframe screen 2" />
-            <figcaption class="gallery-caption">Low-fidelity wireframe for onboarding</figcaption>
+            <img src="images/lowFidelity-wireframes.png" alt="Image of low-fidelity digital wireframes made in Figma, showing social, planning, and help pages" />
+            <figcaption class="gallery-caption">Low-fidelity wireframe</figcaption>
           </figure>
           <figure>
-            <img src="images/inTents-lowFidelityprototype.png" alt="Wireframe screen 3" />
-            <figcaption class="gallery-caption">Low-fidelity wireframe for onboarding</figcaption>
+            <img src="images/inTents-lowFidelityprototype.png" alt="Image of a low-fidelity prototype schematic showing how the all the pages connect" />
+            <figcaption class="gallery-caption">Low-fidelity prototype</figcaption>
+            <div class="button-container">
+              <a href="https://www.figma.com/design/laSiEe6zGpew5s4XnMVdyP/inTents?node-id=0-1&t=LjiyVbrv3zuO2O2q-1" class="button" target="_blank" rel="noopener noreferrer">See Prototype</a>
+            </div>
           </figure>
         </div>
       </section>
 
       <section class="casestudy-section" data-aos="fade-up">
         <h2>Final UI</h2>
-        <p>The final design offers group messaging, checklists, and camp locator tools in an easy-to-use, mobile-first experience.</p>
+        <p>The final design offers group management, socializing, and help search tools in an easy-to-use, mobile-first experience.</p>
         <div class="casestudy-gallery">
           <figure> 
-            <img src="images/inTents-highFidelitymockups.png" alt="Final UI mockups" />
-            <figcaption class="gallery-caption">Low-fidelity wireframe for onboarding</figcaption>
+            <img src="images/inTents-highFidelitymockups.png" alt="Image of the refined final mock ups of social, planning, and help pages done in Figma" />
+            <figcaption class="gallery-caption">High-fidelity wireframes</figcaption>
           </figure>
           <figure>
-            <img src="images/inTents-highFidelityprototype.png" alt="Prototype preview" />
-            <figcaption class="gallery-caption">Low-fidelity wireframe for onboarding</figcaption>
+            <img src="images/inTents-highFidelityprototype.png" alt="Iamge of high-fidelity prototype schematic showing final page connectivity" />
+            <figcaption class="gallery-caption">High-fidelity prototype</figcaption>
+            <div class="button-container">
+              <a href="https://www.figma.com/design/laSiEe6zGpew5s4XnMVdyP/inTents?node-id=23-2827&t=LjiyVbrv3zuO2O2q-1" class="button" target="_blank" rel="noopener noreferrer">See Prototype</a>
+            </div>
           </figure>
         </div>
       </section>
@@ -125,16 +147,18 @@
       <section class="casestudy-section reflection-split" data-aos="fade-up">
         <div>
           <h2>What I Learned</h2>
-          <p>This project strengthened my ability to design for logistical coordination and adapt feedback into polished flows. The biggest challenge was balancing flexibility with simplicity.</p>
+          <p>This project pushed me to think beyond screens; to design for real-world messiness. It taught me how to turn user feedback into clear, intuitive experiences without over complicating things.</p>
         </div>
         <div class="reflection-box">
-          <p><strong>Takeaway:</strong><br />Build tools that simplify—not complicate—real-life coordination.</p>
+          <p><strong>Biggest Takeaway:</strong><br />Users come in many varieties; and every concern, need, and goal matters when designing a meaningful product.</p>
         </div>
       </section>
 
       <div class="button-container" data-aos="fade-up">
         <a href="index.html" class="button">Back to Portfolio</a>
       </div>
+
+      
     </main>
 
     <footer>
@@ -143,5 +167,14 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/scripts.js"></script>
+
+    <button id="scrollToTop" title="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+    <div id="konami-mobile">
+      <div class="konami-zone" id="zone-up"></div>
+      <div class="konami-zone" id="zone-down"></div>
+      <div class="konami-zone" id="zone-left"></div>
+      <div class="konami-zone" id="zone-right"></div>
+    </div>
   </body>
 </html>

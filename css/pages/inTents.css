@@ -132,6 +132,11 @@
   font-size: 1.1rem;
 }
 
+.finding-box p {
+  color: #343740;
+  line-height: 1.6;
+}
+
 /* ---------- Reflection Section ---------- */
 .reflection-split {
   display: flex;
@@ -147,9 +152,62 @@
   border-radius: 0.5rem;
   font-style: italic;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  color: #444;
+  color: #343740;
 }
 
+.reflection-box p {
+  color: #343740;
+}
+
+
+.casestudy-split {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.casestudy-text {
+  flex: 1;
+}
+
+.casestudy-text h2 {
+  font-size: 2rem;
+  color: #66d9c4;
+  margin-bottom: 1.25rem;
+}
+
+.casestudy-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #d1d5db;
+  max-width: 800px;
+}
+
+.casestudy-figure {
+  flex: 1;
+  text-align: center;
+}
+
+.casestudy-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.casestudy-image:hover {
+  transform: scale(1.02);
+}
+
+.gallery-caption {
+  font-size: 0.9rem;
+  color: #999;
+  margin-top: 0.5rem;
+  text-align: center;
+}
 
 
 
@@ -230,5 +288,19 @@
   .button-container {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .casestudy-split {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 6rem;
+  }
+
+  .casestudy-text {
+    padding-right: 2rem;
+  }
+
+  .casestudy-figure {
+    text-align: right;
   }
 }

@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/components.css" />
     <link rel="stylesheet" href="css/pages/CertsandSkill.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap">
   </head>
 
   <body>
@@ -17,12 +19,26 @@
         <img src="images/logo.png" alt="Logo" />
       </a>
       <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="inTents.html">inTents Case Study</a>
-        <a href="CertsandSkills.html" class="active">Certs & Skills</a>
-        <a href="OtherProjects.html">Other Projects</a>
-        <a href="AboutMe.html">About Me</a>
-      </nav>
+                <a href="index.html">Home</a>
+                <a href="inTents.html">inTents Case Study</a>
+                <a href="CertsandSkills.html">Certs & Skills</a>
+                <a href="OtherProjects.html">Other Projects</a>
+                <a href="AboutMe.html">About Me</a>
+            </nav>
+            <div class="hamburger" onclick="toggleNav(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div id="myNav" class="overlay-nav">
+                <div class="overlay-content">
+                    <a href="index.html">Home</a>
+                    <a href="inTents.html">inTents Case Study</a>
+                    <a href="CertsandSkills.html">Certs & Skills</a>
+                    <a href="OtherProjects.html">Other Projects</a>
+                    <a href="AboutMe.html">About Me</a>
+                </div>
+            </div>
     </header>
 
     <main>
@@ -35,55 +51,49 @@
 
       <section class="cert-section">
         <div class="container">
-            <h2>Certifications</h2>
 
             <!-- Google UX Design Professional Certificate -->
             <h3 class="cert-group-title">Google UX Design Professional Certificate</h3>
             <div class="cert-layout">
                 <div class="cert-card featured">
-                    <img src="images/uxCerts-google/googleUXProfessional.png" alt="Google UX Professional Certificate">
+                    <img src="images/googleUXProfessional.png" alt="Google UX Professional Certificate">
                     <h3>UX Design Professional</h3>
                     <p class="cert-org">Google</p>
                 </div>
-                <div class="cert-grid">
-                    <div class="cert-card small">
-                        <img src="images/uxCerts-google/googleUI.png" alt="Google UI Design Certificate">
-                        <h3>UI Design</h3>
-                        <p class="cert-org">Google</p>
-                    </div>
-                    <!-- Repeat as needed with accurate images/titles -->
-                    <div class="cert-card small">
-                        <img src="images/uxCerts-google/googleResearch.png" alt="Google UX Research Certificate">
-                        <h3>User Research</h3>
-                        <p class="cert-org">Google</p>
-                    </div>
-                    <div class="cert-card small">
-                        <img src="images/uxCerts-google/googleUXFoundation.png" alt="Google UX Research Certificate">
-                        <h3>User Research</h3>
-                        <p class="cert-org">Google</p>
-                    </div>
-                    <div class="cert-card small">
-                        <img src="images/uxCerts-google/googleHighFidelity.png" alt="Google UX Research Certificate">
-                        <h3>User Research</h3>
-                        <p class="cert-org">Google</p>
-                    </div>
-                    <div class="cert-card small">
-                        <img src="images/uxCerts-google/googleLowFidelity.png" alt="Google UX Research Certificate">
-                        <h3>User Research</h3>
-                        <p class="cert-org">Google</p>
-                    </div>
-                    <div class="cert-card small">
-                        <img src="images/uxCerts-google/googleProcess.png" alt="Google UX Research Certificate">
-                        <h3>User Research</h3>
-                        <p class="cert-org">Google</p>
-                    </div>
-                    <div class="cert-card small">
-                        <img src="images/uxCerts-google/googleUXPrep.png" alt="Google UX Research Certificate">
-                        <h3>User Research</h3>
-                        <p class="cert-org">Google</p>
-                    </div>
-                    <!-- Add more certs as needed -->
-                </div>
+                <ul class="cert-list">
+                  <li class="cert-item complete">
+                    <span class="cert-status">✔</span>
+                    Foundations of User Experience (UX) Design
+                  </li>
+                  <li class="cert-item complete">
+                    <span class="cert-status">✔</span>
+                    Start The UX Design Process: Empathize, Define, and Ideate
+                  </li>
+                  <li class="cert-item complete">
+                    <span class="cert-status">✔</span>
+                    Build Wireframes and Low-Fidelity Prototypes
+                  </li>
+                  <li class="cert-item complete">
+                    <span class="cert-status">✔</span>
+                    Conduct UX Research and Test Early Concepts
+                  </li>
+                  <li class="cert-item complete">
+                    <span class="cert-status">✔</span>
+                    Create High-Fidelity Designs and Prototypes in Figma
+                  </li>
+                  <li class="cert-item complete">
+                    <span class="cert-status">✔</span>
+                    Build Dynamic User Interfaces (UI) for Websites
+                  </li>
+                  <li class="cert-item complete">
+                    <span class="cert-status">✔</span>
+                    Design a User Experience for Social Good & Prepare for Jobs
+                  </li>
+                  <div class="cert-item button-container">
+                      <a href="https://www.coursera.org/account/accomplishments/professional-cert/002G60HSVVR7" class="button" target="_blank" rel="noopener noreferrer">See Credentials</a>
+                  </div>
+                </ul>
+                
             </div>
 
             <!-- Microsoft UX Design Professional Certificate -->
@@ -94,25 +104,27 @@
                     <h3>Microsoft UX Design Professional</h3>
                     <p class="cert-org">Microsoft (In Progress)</p>
                 </div>
-                <div class="cert-grid">
-                    <div class="cert-card small">
-                        <img src="images/uxCerts-ms/msUIUXFundamentals.png" alt="Microsoft Fundamentals Certificate">
-                        <h3>UX Fundamentals</h3>
-                        <p class="cert-org">Microsoft</p>
-                    </div>
-                        <div class="cert-card dashed-box small">
-                        <h3>Coming Soon</h3>
-                        <p class="cert-org">Microsoft</p>
-                    </div>
-                    <div class="cert-card dashed-box small">
-                        <h3>Coming Soon</h3>
-                        <p class="cert-org">Microsoft</p>
-                    </div>
-                    <div class="cert-card dashed-box small">
-                        <h3>Coming Soon</h3>
-                        <p class="cert-org">Microsoft</p>
-                    </div>
-                </div>
+                <ul class="cert-list">
+                  <li class="cert-item complete">
+                    <span class="cert-status">✔</span>
+                    Fundamentals of UI/UX Design
+                  </li>
+                  <li class="cert-item pending">
+                    <span class="cert-status"></span>
+                    Designing for User Experience
+                  </li>
+                  <li class="cert-item pending">
+                    <span class="cert-status"></span>
+                    User Interface Design and Prototyping
+                  </li>
+                  <li class="cert-item pending">
+                    <span class="cert-status"></span>
+                    UX Design in Practice: Accessibility and Collaboration
+                  </li>
+                  <div class="cert-item button-container">
+                      <a href="https://www.coursera.org/account/accomplishments/verify/LPRF8PZDG05Y" class="button" target="_blank" rel="noopener noreferrer">See Credentials</a>
+                  </div>
+                </ul>
             </div>
 
             <!-- Google Project Management Professional Certificate -->
@@ -123,33 +135,35 @@
                     <h3>Google Project Management Professional</h3>
                     <p class="cert-org">Google (In Progress)</p>
                 </div>
-                <div class="cert-grid">
-                    <div class="cert-card small">
-                        <img src="images/pmCerts-google/googlePMFundamentals.png" alt="Google PM Fundamentals">
-                        <h3>Project Management Fundamentals</h3>
-                        <p class="cert-org">Google</p>
-                    </div>
-                    <div class="cert-card dashed-box small">
-                        <h3>Coming Soon</h3>
-                        <p class="cert-org">Google</p>
-                    </div>
-                    <div class="cert-card dashed-box small">
-                        <h3>Coming Soon</h3>
-                        <p class="cert-org">Google</p>
-                    </div>
-                    <div class="cert-card dashed-box small">
-                        <h3>Coming Soon</h3>
-                        <p class="cert-org">Google</p>
-                    </div>
-                    <div class="cert-card dashed-box small">
-                        <h3>Coming Soon</h3>
-                        <p class="cert-org">Google</p>
-                    </div>
-                    <div class="cert-card dashed-box small">
-                        <h3>Coming Soon</h3>
-                        <p class="cert-org">Google</p>
-                    </div>
-                </div>
+                <ul class="cert-list">
+                  <li class="cert-item complete">
+                    <span class="cert-status">✔</span>
+                    Foundations of Project Management
+                  </li>
+                  <li class="cert-item pending">
+                    <span class="cert-status"></span>
+                    Project Initiation: Starting a Successful Project
+                  </li>
+                  <li class="cert-item pending">
+                    <span class="cert-status"></span>
+                    Project Planning: Putting It All Together
+                  </li>
+                  <li class="cert-item pending">
+                    <span class="cert-status"></span>
+                    Project Execution: Running the Project
+                  </li>
+                  <li class="cert-item pending">
+                    <span class="cert-status"></span>
+                    Agile Project Management
+                  </li>
+                  <li class="cert-item pending">
+                    <span class="cert-status"></span>
+                    Capstone: Applying Project Management in the Real World
+                  </li>
+                  <div class="cert-item button-container">
+                      <a href="https://www.coursera.org/account/accomplishments/verify/MCLC9OT1CQMN" class="button" target="_blank" rel="noopener noreferrer">See Credentials</a>
+                  </div>
+                </ul>
             </div>
         </div>
         </section>
@@ -157,16 +171,25 @@
 
       <section class="skills-section">
         <div class="container">
-          <h2>Skills</h2>
 
           <div class="skill-category">
             <h3>UX Skills</h3>
             <div class="skill-list">
               <span class="skill-badge">User Research</span>
+              <span class="skill-badge">Design Reviews</span>
+              <span class="skill-badge">Storyboarding</span>
+              <span class="skill-badge">User Experience</span>
+              <span class="skill-badge">User Story</span>
+              <span class="skill-badge">Web Design</span>
+              <span class="skill-badge">Usability Testing</span>
+              <span class="skill-badge">UI/UX Research</span>
               <span class="skill-badge">Wireframing</span>
               <span class="skill-badge">Prototyping</span>
               <span class="skill-badge">Usability Testing</span>
               <span class="skill-badge">Design Systems</span>
+              <span class="skill-badge">Human Centered Design</span>
+              <span class="skill-badge">Design Thinking</span>
+              <span class="skill-badge">Figma (Software)</span>
             </div>
           </div>
 
@@ -177,17 +200,34 @@
               <span class="skill-badge">CSS</span>
               <span class="skill-badge">JavaScript</span>
               <span class="skill-badge">Git & GitHub</span>
-              <span class="skill-badge">Figma</span>
+              <span class="skill-badge">Python</span>
+              <span class="skill-badge">Java</span>
+              <span class="skill-badge">SEO</span>
+              <span class="skill-badge">Responsive Design</span>
+              <span class="skill-badge">Front-End Development</span>
+              <span class="skill-badge">Web Development</span>
+              <span class="skill-badge">Back-End Development</span>
+              <span class="skill-badge">API Integration</span>
+              <span class="skill-badge">Database Management</span>
+              <span class="skill-badge">Data Structures</span>
+              <span class="skill-badge">Algorithms</span>
+              <span class="skill-badge">Web Accessibility (WCAG)</span>
             </div>
           </div>
 
           <div class="skill-category">
-            <h3>Soft Skills</h3>
+            <h3>Management Skills</h3>
             <div class="skill-list">
-              <span class="skill-badge">Communication</span>
-              <span class="skill-badge">Collaboration</span>
-              <span class="skill-badge">Critical Thinking</span>
-              <span class="skill-badge">Empathy</span>
+              <span class="skill-badge">Organizational Change</span>
+              <span class="skill-badge">Project Management Lifecycle</span>
+              <span class="skill-badge">Interpersonal Communications</span>
+              <span class="skill-badge">Project Management</span>
+              <span class="skill-badge">Strategic Thinking</span>
+              <span class="skill-badge">Agile Methodologies</span>
+              <span class="skill-badge">Waterfall Methodologies</span>
+              <span class="skill-badge">Organizational Structure</span>
+              <span class="skill-badge">Project Coordination</span>
+              <span class="skill-badge">Project Planning</span>
             </div>
           </div>
         </div>
@@ -195,9 +235,18 @@
     </main>
 
     <footer>
-      <div class="container">
         <p>&copy; 2025 Aaron Shannon. All rights reserved.</p>
-      </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <button id="scrollToTop" title="Back to top"><i class="fas fa-chevron-up"></i></button>
+    <div id="konami-mobile">
+      <div class="konami-zone" id="zone-up"></div>
+      <div class="konami-zone" id="zone-down"></div>
+      <div class="konami-zone" id="zone-left"></div>
+      <div class="konami-zone" id="zone-right"></div>
+    </div>
   </body>
 </html>
