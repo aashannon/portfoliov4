@@ -105,3 +105,5 @@ document.addEventListener("touchend", function (e) {
     swipeIndex = 0;
   }
 }, false);
+
+
